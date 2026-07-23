@@ -14,7 +14,7 @@
     <a href="https://scikit-learn.org"><img src="https://img.shields.io/badge/scikit--learn-ML%20Engine-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=black" alt="Scikit-Learn"/></a>
     <a href="https://shap.readthedocs.io"><img src="https://img.shields.io/badge/SHAP-Explainable%20AI-990000?style=for-the-badge" alt="SHAP"/></a>
     <a href="https://coin-or.github.io/pulp/"><img src="https://img.shields.io/badge/PuLP-Patrol%20Optimizer-00599C?style=for-the-badge" alt="PuLP"/></a>
-    <a href="https://github.com/maddy/Drishti/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.style=for-the-badge" alt="License"/></a>
+    <a href="https://github.com/Madhan310301/Drishti/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.style=for-the-badge" alt="License"/></a>
   </p>
 
   <p align="center">
