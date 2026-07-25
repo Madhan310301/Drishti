@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Drishti | Predictive Command Console - Karnataka Police</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#051424',
+                            card: '#0d1c2d',
+                            surface: '#122131',
+                            surfaceHigh: '#1c2b3c',
+                            primary: '#2563eb',
+                            primaryGlow: '#b4c5ff',
+                            secondary: '#06b6d4',
+                            cyanGlow: '#4cd7f6',
+                            accent: '#ffb95f',
+                            danger: '#ef4444',
+                            success: '#10b981'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #051424;
+            color: #d4e4fa;
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-panel {
+            background: rgba(18, 33, 49, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(180, 197, 255, 0.12);
+        }
+        .glass-card {
+            background: rgba(28, 43, 60, 0.65);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glow-border:focus-within {
+            border-color: #06b6d4;
+            box-shadow: 0 0 12px rgba(6, 182, 212, 0.35);
+        }
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: #051424; }
+        ::-webkit-scrollbar-thumb { background: #1c2b3c; border-radius: 4px; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-brand-secondary selection:text-white">
+
+    <!-- Top Navigation Header -->
+    <header class="h-16 border-b border-white/10 glass-panel fixed top-0 w-full z-50 px-6 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-brand-primary/20 border border-brand-primary/40 flex items-center justify-center text-brand-primaryGlow">
+                <span class="material-symbols-outlined text-2xl">shield</span>
+            </div>
+            <div>
+                <h1 class="font-bold text-lg tracking-tight text-white flex items-center gap-2">
+                    DRISHTI <span class="text-xs px-2 py-0.5 rounded bg-brand-primary/20 text-brand-cyanGlow border border-brand-secondary/30 font-mono">v1.0 LIVE</span>
+                </h1>
+                <p class="text-xs text-slate-400">Karnataka State Police – Predictive Command Console</p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <!-- Live System Health Status -->
+            <div id="healthBadge" class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/80 border border-emerald-500/30 text-xs font-mono">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span class="text-emerald-400 font-medium">SYSTEM CONNECTED</span>
+            </div>
+
+            <!-- API Docs Button -->
+            <a href="/docs" target="_blank" class="px-3 py-1.5 text-xs font-medium rounded-lg bg-brand-surfaceHigh hover:bg-brand-primary/40 border border-white/10 text-slate-200 transition flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-sm">api</span> API Docs
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="pt-20 pb-12 px-6 max-w-[1600px] mx-auto w-full flex-1 space-y-6">
+
+        <!-- Top KPI Cards Row -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <!-- Total Districts -->
+            <div class="glass-panel p-5 rounded-2xl relative overflow-hidden group">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-xs font-mono uppercase text-slate-400 tracking-wider">Districts Analyzed</p>
+                        <h3 id="kpiDistricts" class="text-3xl font-bold text-white mt-1">28</h3>
+                    </div>
+                    <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400">
+                        <span class="material-symbols-outlined">map</span>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-400 mt-3 flex items-center gap-1">
+                    <span class="material-symbols-outlined text-sm text-emerald-400">check_circle</span> 100% Census Coverage
+                </p>
+            </div>
+
+            <!-- Crime Records -->
+            <div class="glass-panel p-5 rounded-2xl relative overflow-hidden group">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-xs font-mono uppercase text-slate-400 tracking-wider">Crime Records</p>
+                        <h3 id="kpiRecords" class="text-3xl font-bold text-white mt-1">233</h3>
+                    </div>
+                    <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400">
+                        <span class="material-symbols-outlined">dataset</span>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-400 mt-3 flex items-center gap-1">
+                    <span class="material-symbols-outlined text-sm text-purple-400">history</span> Multi-Year Trends (2013-2022)
+                </p>
+            </div>
+
+            <!-- Top Risk District -->
+            <div class="glass-panel p-5 rounded-2xl relative overflow-hidden group">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-xs font-mono uppercase text-slate-400 tracking-wider">Highest Risk Zone</p>
+                        <h3 id="kpiHighestDistrict" class="text-2xl font-bold text-red-400 mt-1">Bangalore</h3>
+                    </div>
+                    <div class="w-10 h-10 rounded-xl bg-red-500/10 border border-red-500/30 flex items-center justify-center text-red-400">
+                        <span class="material-symbols-outlined">warning</span>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-400 mt-3 flex items-center gap-1">
+                    <span class="material-symbols-outlined text-sm text-red-400">gavel</span> High Urban Density Risk
+                </p>
+            </div>
+
+            <!-- Anomalies Identified -->
+            <div class="glass-panel p-5 rounded-2xl relative overflow-hidden group">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-xs font-mono uppercase text-slate-400 tracking-wider">ML Anomalies Detected</p>
+                        <h3 id="kpiAnomalies" class="text-3xl font-bold text-brand-accent mt-1">5</h3>
+                    </div>
+                    <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+                        <span class="material-symbols-outlined">radar</span>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-400 mt-3 flex items-center gap-1">
+                    <span class="material-symbols-outlined text-sm text-amber-400">memory</span> Isolation Forest Output
+                </p>
+            </div>
+        </div>
+
+        <!-- Middle Section: Crime Trends Chart & Top Hotspots List -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+            <!-- Chart Panel (2 cols) -->
+            <div class="lg:col-span-2 glass-panel p-6 rounded-2xl space-y-4">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h2 class="text-base font-semibold text-white flex items-center gap-2">
+                            <span class="material-symbols-outlined text-brand-secondary">show_chart</span>
+                            Statewide Crime Trends (2013 - 2022)
+                        </h2>
+                        <p class="text-xs text-slate-400">Historical annual crime category breakdown across Karnataka</p>
+                    </div>
+                    <div class="text-xs font-mono px-2.5 py-1 rounded bg-brand-surface text-brand-cyanGlow border border-brand-secondary/20">
+                        LIVE API /crime/trends
+                    </div>
+                </div>
+                <div class="h-[320px] w-full">
+                    <canvas id="crimeTrendsChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Top Hotspot Districts Panel (1 col) -->
+            <div class="glass-panel p-6 rounded-2xl space-y-4 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-base font-semibold text-white flex items-center gap-2">
+                            <span class="material-symbols-outlined text-red-400">local_fire_department</span>
+                            Top Hotspot Districts
+                        </h2>
+                        <span class="text-xs font-mono text-slate-400">ML Forecast</span>
+                    </div>
+                    <div id="hotspotList" class="space-y-3 overflow-y-auto max-h-[340px] pr-1">
+                        <div class="text-center py-8 text-slate-500">Loading ML hotspots...</div>
+                    </div>
+                </div>
+                <div class="pt-3 border-t border-white/10 text-xs text-slate-400 flex justify-between">
+                    <span>Model: RandomForest + DBSCAN</span>
+                    <span class="text-brand-cyanGlow">Auto-Updated</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Section: District Deep-Dive & Live Simulator -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+            <!-- District Intelligence Inspector -->
+            <div class="glass-panel p-6 rounded-2xl space-y-5">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h2 class="text-base font-semibold text-white flex items-center gap-2">
+                            <span class="material-symbols-outlined text-brand-primaryGlow">search_hands_free</span>
+                            District Intelligence Inspector
+                        </h2>
+                        <p class="text-xs text-slate-400">Select any Karnataka district for demographic & crime breakdown</p>
+                    </div>
+                    <select id="districtSelect" class="bg-brand-surface text-white border border-white/20 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:border-brand-secondary">
+                        <option value="">Loading districts...</option>
+                    </select>
+                </div>
+
+                <div id="districtDetailCard" class="glass-card p-5 rounded-xl space-y-4">
+                    <div class="flex justify-between items-center pb-3 border-b border-white/10">
+                        <div>
+                            <h3 id="detailDistrictName" class="text-xl font-bold text-white">Bangalore</h3>
+                            <p class="text-xs text-slate-400">Demographic & Predictive Summary</p>
+                        </div>
+                        <div id="detailRiskBadge" class="px-3 py-1 rounded-full bg-red-500/20 text-red-400 font-mono text-xs border border-red-500/40">
+                            RISK SCORE: 84.5
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs">
+                        <div class="bg-brand-bg/50 p-2.5 rounded-lg border border-white/5">
+                            <span class="text-slate-400 block">Total Population</span>
+                            <span id="detPop" class="font-mono text-sm font-semibold text-white">-</span>
+                        </div>
+                        <div class="bg-brand-bg/50 p-2.5 rounded-lg border border-white/5">
+                            <span class="text-slate-400 block">Literacy Rate</span>
+                            <span id="detLit" class="font-mono text-sm font-semibold text-white">-</span>
+                        </div>
+                        <div class="bg-brand-bg/50 p-2.5 rounded-lg border border-white/5">
+                            <span class="text-slate-400 block">Urban %</span>
+                            <span id="detUrban" class="font-mono text-sm font-semibold text-white">-</span>
+                        </div>
+                        <div class="bg-brand-bg/50 p-2.5 rounded-lg border border-white/5">
+                            <span class="text-slate-400 block">Hotspot Score</span>
+                            <span id="detHotspot" class="font-mono text-sm font-semibold text-amber-400">-</span>
+                        </div>
+                        <div class="bg-brand-bg/50 p-2.5 rounded-lg border border-white/5">
+                            <span class="text-slate-400 block">Crime Forecast</span>
+                            <span id="detForecast" class="font-mono text-sm font-semibold text-cyan-400">-</span>
+                        </div>
+                        <div class="bg-brand-bg/50 p-2.5 rounded-lg border border-white/5">
+                            <span class="text-slate-400 block">Anomaly Score</span>
+                            <span id="detAnomaly" class="font-mono text-sm font-semibold text-purple-400">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Live Predictive ML Simulator (POST /predict) -->
+            <div class="glass-panel p-6 rounded-2xl space-y-5">
+                <div>
+                    <h2 class="text-base font-semibold text-white flex items-center gap-2">
+                        <span class="material-symbols-outlined text-brand-secondary">psychology</span>
+                        Live ML Predictive Simulator
+                    </h2>
+                    <p class="text-xs text-slate-400">Test real-time predictions against FastAPI endpoint <code>POST /predict</code></p>
+                </div>
+
+                <form id="predictForm" class="space-y-4">
+                    <div class="grid grid-cols-2 gap-3 text-xs">
+                        <div>
+                            <label class="text-slate-400 block mb-1">Target District Name</label>
+                            <input type="text" id="pDistrict" value="Custom Zone" class="w-full bg-brand-surface border border-white/15 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-brand-secondary font-mono"/>
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Population</label>
+                            <input type="number" id="pPop" value="1500000" class="w-full bg-brand-surface border border-white/15 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-brand-secondary font-mono"/>
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Crime Rate / 100k</label>
+                            <input type="number" step="0.1" id="pRate" value="210.5" class="w-full bg-brand-surface border border-white/15 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-brand-secondary font-mono"/>
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Literacy %</label>
+                            <input type="number" step="0.1" id="pLit" value="78.0" class="w-full bg-brand-surface border border-white/15 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-brand-secondary font-mono"/>
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Urban %</label>
+                            <input type="number" step="0.1" id="pUrban" value="45.0" class="w-full bg-brand-surface border border-white/15 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-brand-secondary font-mono"/>
+                        </div>
+                        <div>
+                            <label class="text-slate-400 block mb-1">Crime Severity Score</label>
+                            <input type="number" step="0.1" id="pSev" value="55.0" class="w-full bg-brand-surface border border-white/15 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-brand-secondary font-mono"/>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-brand-primary to-brand-secondary text-white font-semibold text-sm hover:opacity-90 transition flex items-center justify-center gap-2">
+                        <span class="material-symbols-outlined text-lg">bolt</span> Run ML Risk Prediction
+                    </button>
+                </form>
+
+                <!-- ML Output Result Box -->
+                <div id="simResult" class="hidden glass-card p-4 rounded-xl space-y-2 border border-brand-secondary/30">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-slate-300">PREDICTION RESULT</span>
+                        <span id="simRiskLevel" class="text-xs font-bold px-2 py-0.5 rounded bg-red-500/20 text-red-400 border border-red-500/40">CRITICAL</span>
+                    </div>
+                    <div class="grid grid-cols-4 gap-2 text-center text-xs font-mono">
+                        <div class="bg-brand-bg/60 p-2 rounded">
+                            <span class="text-slate-400 block text-[10px]">RISK SCORE</span>
+                            <span id="simRiskScore" class="text-white font-bold text-sm">-</span>
+                        </div>
+                        <div class="bg-brand-bg/60 p-2 rounded">
+                            <span class="text-slate-400 block text-[10px]">HOTSPOT</span>
+                            <span id="simHotspot" class="text-amber-400 font-bold text-sm">-</span>
+                        </div>
+                        <div class="bg-brand-bg/60 p-2 rounded">
+                            <span class="text-slate-400 block text-[10px]">FORECAST</span>
+                            <span id="simForecast" class="text-cyan-400 font-bold text-sm">-</span>
+                        </div>
+                        <div class="bg-brand-bg/60 p-2 rounded">
+                            <span class="text-slate-400 block text-[10px]">ANOMALY</span>
+                            <span id="simAnomaly" class="text-purple-400 font-bold text-sm">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript Logic connecting to FastAPI Backend -->
+    <script>
+        const API_BASE = 'http://127.0.0.1:8000';
+        let trendChart = null;
+
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchHealth();
+            fetchAnalyticsSummary();
+            fetchCrimeTrends();
+            fetchHotspots();
+            fetchDistricts();
+        });
+
+        // 1. Fetch System Health
+        async function fetchHealth() {
+            try {
+                const res = await fetch(`${API_BASE}/health`);
+                const data = await res.json();
+                const badge = document.getElementById('healthBadge');
+                if (data.status === 'OK') {
+                    badge.innerHTML = `<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span><span class="text-emerald-400 font-medium font-mono">API CONNECTED (${data.database})</span>`;
+                }
+            } catch (err) {
+                console.error('Health fetch failed:', err);
+            }
+        }
+
+        // 2. Fetch Analytics Summary
+        async function fetchAnalyticsSummary() {
+            try {
+                const res = await fetch(`${API_BASE}/analytics/summary`);
+                const data = await res.json();
+                if (data.status === 'SUCCESS') {
+                    document.getElementById('kpiDistricts').innerText = data.total_districts || 28;
+                    document.getElementById('kpiHighestDistrict').innerText = data.highest_crime_risk_district || 'Bangalore';
+                    document.getElementById('kpiAnomalies').innerText = data.total_anomalies_detected || 5;
+                }
+            } catch (err) {
+                console.error('Summary fetch failed:', err);
+            }
+        }
+
+        // 3. Fetch Crime Trends & Render Chart
+        async function fetchCrimeTrends() {
+            try {
+                const res = await fetch(`${API_BASE}/crime/trends`);
+                const data = await res.json();
+                const trends = data.yearly_trends || [];
+
+                const labels = trends.map(t => t.year);
+                const murder = trends.map(t => t.murder);
+                const rape = trends.map(t => t.rape);
+                const robbery = trends.map(t => t.robbery);
+                const kidnapping = trends.map(t => t.kidnapping);
+
+                const ctx = document.getElementById('crimeTrendsChart').getContext('2d');
+                if (trendChart) trendChart.destroy();
+
+                trendChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [
+                            { label: 'Murder', data: murder, borderColor: '#ef4444', backgroundColor: 'rgba(239, 68, 68, 0.1)', tension: 0.3, fill: true },
+                            { label: 'Rape', data: rape, borderColor: '#ec4899', backgroundColor: 'rgba(236, 72, 153, 0.1)', tension: 0.3, fill: true },
+                            { label: 'Robbery', data: robbery, borderColor: '#f59e0b', backgroundColor: 'rgba(245, 158, 11, 0.1)', tension: 0.3, fill: true },
+                            { label: 'Kidnapping', data: kidnapping, borderColor: '#06b6d4', backgroundColor: 'rgba(6, 182, 212, 0.1)', tension: 0.3, fill: true }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { labels: { color: '#94a3b8', font: { family: 'Inter', size: 12 } } }
+                        },
+                        scales: {
+                            x: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { color: '#94a3b8' } },
+                            y: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { color: '#94a3b8' } }
+                        }
+                    }
+                });
+            } catch (err) {
+                console.error('Trends fetch failed:', err);
+            }
+        }
+
+        // 4. Fetch Top Hotspots
+        async function fetchHotspots() {
+            try {
+                const res = await fetch(`${API_BASE}/crime/hotspots?limit=5`);
+                const hotspots = await res.json();
+                const container = document.getElementById('hotspotList');
+                container.innerHTML = '';
+
+                hotspots.forEach(h => {
+                    const item = document.createElement('div');
+                    item.className = 'glass-card p-3 rounded-xl flex items-center justify-between border border-white/5 hover:border-brand-secondary/40 transition cursor-pointer';
+                    item.onclick = () => loadDistrictDetail(h.district);
+                    item.innerHTML = `
+                        <div>
+                            <h4 class="font-semibold text-white text-sm">${h.district}</h4>
+                            <p class="text-[11px] text-slate-400">Forecast Rate: <span class="text-cyan-400 font-mono">${h.crime_forecast}</span></p>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-xs font-bold font-mono px-2 py-0.5 rounded bg-red-500/20 text-red-400 border border-red-500/30">RISK ${h.risk_score}</span>
+                            <span class="block text-[10px] text-slate-400 mt-1">Hotspot: ${h.hotspot_score}</span>
+                        </div>
+                    `;
+                    container.appendChild(item);
+                });
+            } catch (err) {
+                console.error('Hotspots fetch failed:', err);
+            }
+        }
+
+        // 5. Fetch District List for Selector
+        async function fetchDistricts() {
+            try {
+                const res = await fetch(`${API_BASE}/districts`);
+                const districts = await res.json();
+                const select = document.getElementById('districtSelect');
+                select.innerHTML = '';
+
+                districts.forEach(d => {
+                    const opt = document.createElement('option');
+                    opt.value = d.district;
+                    opt.innerText = d.district;
+                    select.appendChild(opt);
+                });
+
+                select.onchange = (e) => loadDistrictDetail(e.target.value);
+                if (districts.length > 0) loadDistrictDetail(districts[0].district);
+            } catch (err) {
+                console.error('Districts fetch failed:', err);
+            }
+        }
+
+        // 6. Load District Detail
+        async function loadDistrictDetail(districtName) {
+            try {
+                const res = await fetch(`${API_BASE}/district/${encodeURIComponent(districtName)}`);
+                const data = await res.json();
+
+                document.getElementById('detailDistrictName').innerText = data.district;
+                const risk = data.predictions ? data.predictions.risk_score : 0.0;
+                document.getElementById('detailRiskBadge').innerText = `RISK SCORE: ${risk}`;
+
+                document.getElementById('detPop').innerText = data.demographics.total_population ? data.demographics.total_population.toLocaleString() : '-';
+                document.getElementById('detLit').innerText = `${data.demographics.literacy_rate || 0}%`;
+                document.getElementById('detUrban').innerText = `${data.demographics.urban_pct || 0}%`;
+                document.getElementById('detHotspot').innerText = data.predictions ? data.predictions.hotspot_score : '-';
+                document.getElementById('detForecast').innerText = data.predictions ? data.predictions.crime_forecast : '-';
+                document.getElementById('detAnomaly').innerText = data.predictions ? data.predictions.anomaly_score : '-';
+            } catch (err) {
+                console.error('District detail fetch failed:', err);
+            }
+        }
+
+        // 7. Live Predictive Simulator Form Submission
+        document.getElementById('predictForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const payload = {
+                district: document.getElementById('pDistrict').value,
+                total_population: parseFloat(document.getElementById('pPop').value),
+                crime_rate_per_100k: parseFloat(document.getElementById('pRate').value),
+                literacy_pct: parseFloat(document.getElementById('pLit').value),
+                urban_pct: parseFloat(document.getElementById('pUrban').value),
+                crime_growth_rate: 2.5,
+                crime_severity_score: parseFloat(document.getElementById('pSev').value)
+            };
+
+            try {
+                const res = await fetch(`${API_BASE}/predict`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const data = await res.json();
+
+                document.getElementById('simResult').classList.remove('hidden');
+                document.getElementById('simRiskLevel').innerText = data.risk_level;
+                document.getElementById('simRiskScore').innerText = data.risk_score;
+                document.getElementById('simHotspot').innerText = data.hotspot_score;
+                document.getElementById('simForecast').innerText = data.crime_forecast;
+                document.getElementById('simAnomaly').innerText = data.anomaly_score;
+            } catch (err) {
+                alert('Live prediction request failed. Ensure backend API is running.');
+            }
+        });
+    </script>
+</body>
+</html>

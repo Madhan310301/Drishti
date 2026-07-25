@@ -1,0 +1,46 @@
+# Virtual Environment
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Local database (generated at runtime)
+*.db
+drishti.db
+
+# Processed data
+data/processed/*
+!data/processed/.gitkeep
+
+# Output
+data/output/*
+!data/output/.gitkeep
+
+# Test cache
+.pytest_cache/
+
+# Coverage
+.coverage
+htmlcov/
