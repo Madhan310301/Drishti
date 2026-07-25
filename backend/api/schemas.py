@@ -108,3 +108,17 @@ class PatrolPlanResponse(BaseModel):
     risk_reduction_pct: float
     solver_status: str
     assignments: list[PatrolAssignment]
+
+
+class NetworkTopConnected(BaseModel):
+    suspect_id: str
+    links: int
+
+
+class NetworkGraphResponse(BaseModel):
+    html_path: str
+    node_count: int
+    edge_count: int
+    district_filter: str | None
+    gangs: list[str]
+    top_connected: list[NetworkTopConnected]

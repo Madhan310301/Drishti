@@ -18,6 +18,7 @@ from backend.database.queries import (
 from backend.ml.pipeline import MLPipeline
 from backend.ml.explainability import ShapExplainer
 from backend.ml.patrol_optimizer import PatrolOptimizer
+from backend.ml.network_graph import NetworkGraphBuilder
 from backend.etl.config import ANALYTICS_SUMMARY_FILE
 from backend.api.schemas import (
     HealthResponse,
@@ -32,6 +33,8 @@ from backend.api.schemas import (
     ShapGlobalResponse,
     PatrolAssignment,
     PatrolPlanResponse,
+    NetworkGraphResponse,
+    NetworkTopConnected,
 )
 
 router = APIRouter()
@@ -215,4 +218,27 @@ def patrol_optimize(
         risk_reduction_pct=plan["risk_reduction_pct"],
         solver_status=plan["solver_status"],
         assignments=assignments,
+    )
+
+
+@router.get("/network/graph", response_model=NetworkGraphResponse, summary="Criminal Network Graph")
+def network_graph(district: str | None = Query(default=None, description="Optional district filter")) -> NetworkGraphResponse:
+    """
+    Build an interactive PyVis HTML graph of the offender co-offending network.
+    The manual's Criminal Network Analysis (Jenifa's role).
+    """
+    try:
+        builder = NetworkGraphBuilder()
+        meta = builder.build(district=district)
+        builder.save_metadata(meta)
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Network graph failed: {exc}")
+
+    return NetworkGraphResponse(
+        html_path=meta["html_path"],
+        node_count=meta["node_count"],
+        edge_count=meta["edge_count"],
+        district_filter=meta["district_filter"],
+        gangs=meta["gangs"],
+        top_connected=[NetworkTopConnected(**t) for t in meta["top_connected"]],
     )
