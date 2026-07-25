@@ -17,6 +17,8 @@ shap>=0.45.0
 pulp>=2.8.0
 # Network visualization
 pyvis>=0.3.2
+# Maps
+folium>=0.16.0
 
 # Testing & utilities
 pytest>=7.3.0

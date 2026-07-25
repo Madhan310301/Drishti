@@ -122,3 +122,11 @@ class NetworkGraphResponse(BaseModel):
     district_filter: str | None
     gangs: list[str]
     top_connected: list[NetworkTopConnected]
+
+
+class HotspotMapResponse(BaseModel):
+    html_path: str
+    plotted_count: int
+    missing_coords: list[str]
+    bands: dict[str, int]
+    deployments_overlaid: int

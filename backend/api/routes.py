@@ -19,6 +19,7 @@ from backend.ml.pipeline import MLPipeline
 from backend.ml.explainability import ShapExplainer
 from backend.ml.patrol_optimizer import PatrolOptimizer
 from backend.ml.network_graph import NetworkGraphBuilder
+from backend.ml.hotspot_map import HotspotMapBuilder
 from backend.etl.config import ANALYTICS_SUMMARY_FILE
 from backend.api.schemas import (
     HealthResponse,
@@ -35,6 +36,7 @@ from backend.api.schemas import (
     PatrolPlanResponse,
     NetworkGraphResponse,
     NetworkTopConnected,
+    HotspotMapResponse,
 )
 
 router = APIRouter()
@@ -241,4 +243,37 @@ def network_graph(district: str | None = Query(default=None, description="Option
         district_filter=meta["district_filter"],
         gangs=meta["gangs"],
         top_connected=[NetworkTopConnected(**t) for t in meta["top_connected"]],
+    )
+
+
+@router.get("/map/hotspots", response_model=HotspotMapResponse, summary="Hotspot Map")
+def map_hotspots(
+    overlay_patrols: bool = Query(default=False, description="Overlay latest patrol plan if available"),
+) -> HotspotMapResponse:
+    """
+    Build an interactive Folium map of district crime hotspots (OpenStreetMap).
+    The manual's Hotspot Map (Jenifa's role). Optionally overlays patrol units
+    from the most recent patrol plan file.
+    """
+    try:
+        deployments = None
+        if overlay_patrols:
+            from backend.etl.config import PATROL_PLAN_FILE
+            if PATROL_PLAN_FILE.exists():
+                import json
+                with open(PATROL_PLAN_FILE) as f:
+                    plan = json.load(f)
+                deployments = plan.get("assignments")
+        builder = HotspotMapBuilder()
+        meta = builder.build(deployments=deployments)
+        builder.save_metadata(meta)
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Hotspot map failed: {exc}")
+
+    return HotspotMapResponse(
+        html_path=meta["html_path"],
+        plotted_count=meta["plotted_count"],
+        missing_coords=meta["missing_coords"],
+        bands=meta["bands"],
+        deployments_overlaid=meta["deployments_overlaid"],
     )
