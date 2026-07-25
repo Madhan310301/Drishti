@@ -17,6 +17,7 @@ from backend.database.queries import (
 )
 from backend.ml.pipeline import MLPipeline
 from backend.ml.explainability import ShapExplainer
+from backend.ml.patrol_optimizer import PatrolOptimizer
 from backend.etl.config import ANALYTICS_SUMMARY_FILE
 from backend.api.schemas import (
     HealthResponse,
@@ -29,6 +30,8 @@ from backend.api.schemas import (
     ShapContribution,
     ShapDistrictResponse,
     ShapGlobalResponse,
+    PatrolAssignment,
+    PatrolPlanResponse,
 )
 
 router = APIRouter()
@@ -183,4 +186,33 @@ def explain_district(district: str) -> ShapDistrictResponse:
         top_decrease=explanation["top_decrease"],
         plain_english=explanation["plain_english"],
         contributions=contributions,
+    )
+
+
+@router.post("/patrol/optimize", response_model=PatrolPlanResponse, summary="Patrol Deployment Plan")
+def patrol_optimize(
+    total_units: int = Query(default=20, ge=1, le=500, description="Available patrol units tonight"),
+    max_per_district: int | None = Query(default=None, ge=1, le=500, description="Cap per district"),
+) -> PatrolPlanResponse:
+    """
+    Allocate limited patrol units across districts to maximise crime-risk
+    reduction (PuLP linear program). The manual's Patrol Recommendation Engine.
+    """
+    try:
+        optimizer = PatrolOptimizer()
+        plan = optimizer.optimize(total_units=total_units, max_per_district=max_per_district)
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Patrol optimization failed: {exc}")
+
+    assignments = [PatrolAssignment(**a) for a in plan["assignments"]]
+    return PatrolPlanResponse(
+        total_units=plan["total_units"],
+        max_per_district=plan["max_per_district"],
+        districts_considered=plan["districts_considered"],
+        baseline_risk=plan["baseline_risk"],
+        risk_reduced=plan["risk_reduced"],
+        residual_risk=plan["residual_risk"],
+        risk_reduction_pct=plan["risk_reduction_pct"],
+        solver_status=plan["solver_status"],
+        assignments=assignments,
     )

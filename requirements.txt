@@ -13,6 +13,8 @@ psycopg2-binary>=2.9.0
 
 # ML / Explainability
 shap>=0.45.0
+# Optimization (Patrol Deployment Simulator)
+pulp>=2.8.0
 
 # Testing & utilities
 pytest>=7.3.0

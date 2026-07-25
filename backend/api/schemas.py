@@ -88,3 +88,23 @@ class ShapGlobalResponse(BaseModel):
     target: str
     base_value: float
     importance: list[ShapContribution]
+
+
+class PatrolAssignment(BaseModel):
+    district: str
+    units_assigned: int
+    risk_score: float
+    coverage_fraction: float
+    risk_reduced: float
+
+
+class PatrolPlanResponse(BaseModel):
+    total_units: int
+    max_per_district: int
+    districts_considered: int
+    baseline_risk: float
+    risk_reduced: float
+    residual_risk: float
+    risk_reduction_pct: float
+    solver_status: str
+    assignments: list[PatrolAssignment]
