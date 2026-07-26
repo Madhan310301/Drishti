@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>DRISHTI — Predictive Command Console</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14' font-size='14'>🛡️</text></svg>" />
 <style>
   :root {
     --bg: #0a0e17;
@@ -281,9 +282,9 @@ async function loadRiskSummary() {
 
 // Patrol: look up precomputed grid cell
 async function runPatrol() {
-  const u = +units.value, r = parseFloat(radius.value);
+  const u = Number(units.value), r = Number(parseFloat(radius.value).toFixed(1));
   const grid = await load('patrol_grid.json');
-  const cell = (Array.isArray(grid) ? grid : []).find(g => g.units === u && Math.abs(g.radius - r) < 0.001);
+  const cell = (Array.isArray(grid) ? grid : []).find(g => Number(g.units) === u && Math.abs(Number(g.radius) - r) < 0.001);
   if (!cell) {
     document.getElementById('coverage').innerHTML = '--<small>% risk covered</small>';
     document.getElementById('uncovered').textContent = 'no data';
@@ -305,13 +306,14 @@ document.getElementById('shapRun').onclick = async () => {
   const all = await load('shap_districts.json');
   const d = all[dist];
   if (!d || d.error) { document.getElementById('shapText').textContent = 'No explanation available.'; return; }
-  document.getElementById('shapText').innerHTML = d.plain_english || '';
+  const pe = Array.isArray(d.plain_english) ? d.plain_english.join('<br>') : (d.plain_english || '');
+  document.getElementById('shapText').innerHTML = pe;
   const bars = document.getElementById('shapBars');
   const contribs = (d.contributions || []).slice().sort((a,b)=>b.shap_value-a.shap_value);
   const max = Math.max(...contribs.map(c=>Math.abs(c.shap_value)), 1);
   bars.innerHTML = contribs.map(c => `
     <div class="bar-row">
-      <div class="name">${c.label}</div>
+      <div class="name">${c.label || c.feature || '?'}</div>
       <div class="bar-track"><div class="bar-fill" style="width:${Math.abs(c.shap_value)/max*100}%"></div></div>
       <div class="bar-val">${c.shap_value.toFixed(2)}</div>
     </div>`).join('');

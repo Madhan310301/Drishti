@@ -115,7 +115,9 @@ for d in dists:
         from backend.api.routes import explain_district
         r = explain_district(d)
         if r:
-            shap_records[d] = r
+            # r is a Pydantic model -> convert to plain dict so JSON is real,
+            # not a str() dump.
+            shap_records[d] = r.model_dump() if hasattr(r, "model_dump") else r
     except Exception as e:
         shap_records[d] = {"error": str(e)}
 dump("shap_districts.json", shap_records)
