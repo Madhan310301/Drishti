@@ -193,10 +193,10 @@
       </div>
       <div class="panel-body">
         <div class="tabpane active" id="tab-map">
-          <iframe class="viz" src="static-viz/hotspot_map.html"></iframe>
+          <div class="viz" id="mount-map"><div class="loading">Loading hotspot map…</div></div>
         </div>
         <div class="tabpane" id="tab-net">
-          <iframe class="viz" src="static-viz/offender_network.html"></iframe>
+          <div class="viz" id="mount-net"><div class="loading">Loading offender network…</div></div>
         </div>
         <div class="tabpane" id="tab-shap">
           <div class="shap-controls">
@@ -236,15 +236,31 @@ setInterval(() => {
 }, 1000);
 
 // tabs
+const vizLoaded = {};
+async function loadViz(tab, file, mountId) {
+  if (vizLoaded[tab]) return;
+  const mount = document.getElementById(mountId);
+  try {
+    const html = await (await fetch('static-viz/' + file)).text();
+    mount.innerHTML = html;
+    vizLoaded[tab] = true;
+  } catch (e) {
+    mount.innerHTML = '<div class="loading">Map failed to load.</div>';
+  }
+}
 document.querySelectorAll('.tab').forEach(t => {
   t.onclick = () => {
     document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
     document.querySelectorAll('.tabpane').forEach(x => x.classList.remove('active'));
     t.classList.add('active');
     document.getElementById('tab-' + t.dataset.tab).classList.add('active');
+    if (t.dataset.tab === 'map') loadViz('map', 'hotspot_map.html', 'mount-map');
+    if (t.dataset.tab === 'net') loadViz('net', 'offender_network.html', 'mount-net');
     if (t.dataset.tab === 'socio') loadSocio();
   };
 });
+// load the default (map) tab on init
+loadViz('map', 'hotspot_map.html', 'mount-map');
 
 // sliders
 const units = document.getElementById('units'), radius = document.getElementById('radius');
