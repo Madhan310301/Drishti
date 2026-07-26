@@ -1,10 +1,10 @@
 <div align="center">
 
   <!-- 3D Header Animation / Banner -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:09090e,50:0f172a,100:1e1b4b&height=220&section=header&text=DRISHTI%20%E2%9A%A1%EF%B8%8F&fontSize=70&fontColor=00f2fe&animation=fadeIn&fontAlignY=38&desc=PREDICTIVE%20COMMAND%20CONSOLE%20%7C%20KARNATAKA%20POLICE%20DATATHON%202026&descSize=18&descAlignY=62&descAlign=50" width="100%" alt="Drishti Banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:09090e,50:0f172a,100:1e1b4b&height=220&section=header&text=DRISHTI%20%E2%9A%A1%EF%B8%8F&fontSize=70&fontColor=00f2fe&animation=fadeIn&fontAlignY=38&desc=Predictive%20Policing%20%2B%20Patrol%20Optimization%20for%20RTCC&descAlignY=60&descAlign=50" alt="DRISHTI Banner"/>
 
   <p align="center">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00F2FE&center=true&vCenter=true&width=700&lines=Beyond+Prediction%3A+Optimizing+Real-World+Patrol+Action;DBSCAN+Hotspot+Clustering+%2B+Isolation+Forest+Surges;SHAP+Explainable+AI+%2B+PuLP+Resource+Simulator;Karnataka+Police+Datathon+2026+Challenge+02" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00F2FE&center=true&vCenter=true&width=700&lines=Beyond+Prediction%3A+Optimizing+Real-World+Patrol+Decisions;Explainable+AI+for+Command+Center+Deployment;Datathon+2026+%7C+Challenge+02+%7C+Team+Drishti" alt="Typing intro"/>
   </p>
 
   <!-- Badges -->
@@ -14,7 +14,6 @@
     <a href="https://scikit-learn.org"><img src="https://img.shields.io/badge/scikit--learn-ML%20Engine-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=black" alt="Scikit-Learn"/></a>
     <a href="https://shap.readthedocs.io"><img src="https://img.shields.io/badge/SHAP-Explainable%20AI-990000?style=for-the-badge" alt="SHAP"/></a>
     <a href="https://coin-or.github.io/pulp/"><img src="https://img.shields.io/badge/PuLP-Patrol%20Optimizer-00599C?style=for-the-badge" alt="PuLP"/></a>
-    
   </p>
 
   <p align="center">
@@ -29,22 +28,21 @@
 
 Most crime analytics tools generate static heatmaps and stop there—leaving command officers with a critical **Real-Time Crime Center (RTCC) gap**: *they predict, but they don't decide.*
 
-**Drishti** bridges this gap. Built for the Karnataka Police Datathon 2026, Drishti is an interactive, explainable, predictive command console that turns crime predictions into **optimized, actionable patrol unit deployments**.
+**Drishti** bridges this gap. Built for the Karnataka Police Datathon 2026, Drishti is an interactive, explainable, predictive command console that turns crime predictions into **optimized, actionable patrol strategies**.
 
 ```
-
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                                  DRISHTI ENGINE FLOW                                    │
-│                                                                                         │
-│   [Raw Crime Points] ──► [DBSCAN Density Clusters] ──► [Isolation Forest Surge Alerts]  │
-│                                                                   │                     │
-│   [Real Socio-Econ Stats] ──► [Supervised Risk Proxy] ────────────┤                     │
-│                                                                   ▼                     │
-│   [Patrol Units (N)] ──► [PuLP Optimization Solver] ──► [SHAP Explainable Risk Score]   │
-│                                 │                                                       │
-│                                 ▼                                                       │
-│                [OPTIMIZED PATROL ROUTES & MAP DEPLOYMENT]                               │
-└─────────────────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                  DRISHTI ENGINE FLOW                                       │
+│                                                                                             │
+│   [Raw Crime Points] ──► [DBSCAN Density Clusters] ──► [Isolation Forest Surge Alerts]     │
+│                                                                   │                         │
+│   [Real Socio-Econ Stats] ──► [Supervised Risk Proxy] ────────────┤                         │
+│                                                                   ▼                         │
+│   [Patrol Units (N)] ──► [PuLP Optimization Solver] ──► [SHAP Explainable Risk Score]      │
+│                                 │                                                           │
+│                                 ▼                                                           │
+│                [OPTIMIZED PATROL ROUTES & MAP DEPLOYMENT]                                  │
+└─────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -53,10 +51,10 @@ Most crime analytics tools generate static heatmaps and stop there—leaving com
 
 | Feature | Description | Technical Implementation |
 | :--- | :--- | :--- |
-| 🚓 **Patrol Simulator** | *"What-If"* interactive deployment tool. Given $N$ patrol units, computes optimal unit placement maximizing covered crime risk while minimizing response latency. | `PuLP` Integer Linear Programming (Maximal Covering Location Problem) |
-| 🧠 **SHAP Explainability** | Every grid risk score ships with a transparent natural language feature attribution breakdown—explaining *why* an area is high risk. | `shap.TreeExplainer` on Random Forest proxy model |
-| 📊 **Real Socio-Economic Overlay** | Merges district open government statistics (unemployment, literacy, poverty, liquor density) with crime incident points. | Karnataka district CSV + Pandas spatial aggregation |
-| 🌐 **Offender Network Graph** | Interactive visualization of criminal networks, shared MO signatures, and suspect co-offending linkages—without controversial facial recognition. | `Pyvis` + `NetworkX` physics-enabled graph |
+| 🚓 **Patrol Simulator** | *"What-If"* interactive deployment tool. Given $N$ patrol units, computes optimal unit placement maximizing covered crime risk while minimizing response latency. | `PuLP` integer programming over hotspot risk grid |
+| 🧠 **SHAP Explainability** | Every grid risk score ships with a transparent natural language feature attribution breakdown—explaining *why* an area is high risk. | `shap.TreeExplainer` on RandomForest/XGBoost-style risk proxy |
+| 📊 **Real Socio-Economic Overlay** | Merges district open government statistics (unemployment, literacy, poverty, liquor density) with crime incident points. | Karnataka district CSV + Pandas geospatial joins |
+| 🌐 **Offender Network Graph** | Interactive visualization of criminal networks, shared MO signatures, and suspect co-offending linkages—without controversial facial recognition. | `Pyvis` + `NetworkX` graph rendering |
 | 📍 **Spatial Density & Surges** | Automatic spatial crime cluster identification and spatio-temporal surge anomaly detection. | `DBSCAN` (Haversine metric) + `Isolation Forest` |
 
 ---
@@ -87,17 +85,16 @@ graph TD
 ## 🛠️ Technology Stack
 
 ```
-
-┌─────────────────────────────────────────────────────────────────────────┐
-│ CORE STACK                                                              │
-│                                                                         │
-│   Frontend & Dashboard   : Streamlit · Folium · Plotly Express · Pyvis  │
-│   Machine Learning       : Scikit-learn · DBSCAN · Isolation Forest     │
-│   Explainable AI         : SHAP (SHapley Additive exPlanations)         │
-│   Optimization Engine    : PuLP (CBC Solver) / SciPy                    │
-│   Data Engineering       : Pandas · NumPy                               │
-│   Data Sources           : KSP Crime Data 2022 (real) · Karnataka SES   │
-└─────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────────────────────┐
+│ CORE STACK                                                                                  │
+│                                                                                             │
+│   Frontend & Dashboard   : Streamlit · Folium · Plotly Express · Pyvis                     │
+│   Machine Learning       : Scikit-learn · DBSCAN · Isolation Forest                        │
+│   Explainable AI         : SHAP (SHapley Additive exPlanations)                            │
+│   Optimization Engine    : PuLP (CBC Solver) / SciPy                                       │
+│   Data Engineering       : Pandas · NumPy                                                  │
+│   Data Sources           : KSP Crime Data 2022 (real) · Karnataka SES                      │
+└─────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -105,8 +102,8 @@ graph TD
 ## 🚀 Quick Start & Installation
 
 ### Prerequisites
-* Python 3.10+
-* Git
+- Python 3.10+
+- Git
 
 ```bash
 # 1. Clone the repository
@@ -144,7 +141,6 @@ streamlit run app/app.py
 ## 📂 Project Structure
 
 ```
-
 Drishti/
 ├── data/
 │   ├── raw/
@@ -175,10 +171,10 @@ Drishti/
 ├── app/
 │   └── app.py                                # Main Streamlit Command Console UI
 ├── tests/
-│   ├── test_features.py                     # Feature tests
-│   └── test_manual_checklists.py            # Manual "done" checklist tests
+│   ├── test_features.py                      # Feature tests
+│   └── test_manual_checklists.py             # Manual "done" checklist tests
 ├── DATA_CONTRACTS.md                         # Team API & Data schema contract
-├── requirements.txt                         # Dependencies
+├── requirements.txt                          # Dependencies
 └── README.md
 ```
 
@@ -193,9 +189,6 @@ Drishti/
 | **Vijay**   | **ML Engineer** | DBSCAN Hotspots (`hotspots.py`), Isolation Forest (`anomalies.py`), SHAP Explainer |
 | **Kalyan**  | **Optimization Engineer** | PuLP Patrol Simulator Engine (`patrol_optimizer.py`), Coverage Metrics |
 | **Jenifa**  | **Frontend Developer** | Streamlit Dark Command UI (`app.py`), Folium Maps, SHAP Panels, Pyvis Network Graph |
-
----
-
 
 ---
 
