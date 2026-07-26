@@ -1,0 +1,32 @@
+{
+  "shap_districts": [
+    "Bagalkot",
+    "Bangalore",
+    "Bangalore Rural",
+    "Belgaum",
+    "Bellary",
+    "Bidar",
+    "Chamarajanagar",
+    "Chikkaballapura",
+    "Chikmagalur",
+    "Chitradurga",
+    "Dakshina Kannada",
+    "Davanagere",
+    "Dharwad",
+    "Gadag",
+    "Gulbarga",
+    "Hassan",
+    "Haveri",
+    "Kolar",
+    "Koppal",
+    "Mandya",
+    "Mysore",
+    "Raichur",
+    "Ramanagara",
+    "Shimoga",
+    "Tumkur",
+    "Udupi",
+    "Uttara Kannada",
+    "Yadgir"
+  ]
+}

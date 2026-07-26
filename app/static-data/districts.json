@@ -1,0 +1,254 @@
+[
+  {
+    "district": "Belgaum",
+    "total_population": 3722999,
+    "male_population": 1891251,
+    "female_population": 1831748,
+    "literacy_rate": 60.45,
+    "urban_pct": 4.15,
+    "work_participation_rate": 46.61
+  },
+  {
+    "district": "Bagalkot",
+    "total_population": 1334568,
+    "male_population": 671701,
+    "female_population": 662867,
+    "literacy_rate": 54.86,
+    "urban_pct": 3.2,
+    "work_participation_rate": 45.97
+  },
+  {
+    "district": "Bidar",
+    "total_population": 1289247,
+    "male_population": 657419,
+    "female_population": 631828,
+    "literacy_rate": 57.99,
+    "urban_pct": 0.92,
+    "work_participation_rate": 44.26
+  },
+  {
+    "district": "Raichur",
+    "total_population": 1471830,
+    "male_population": 734820,
+    "female_population": 737010,
+    "literacy_rate": 46.26,
+    "urban_pct": 2.27,
+    "work_participation_rate": 50.14
+  },
+  {
+    "district": "Koppal",
+    "total_population": 1174001,
+    "male_population": 591892,
+    "female_population": 582109,
+    "literacy_rate": 56.51,
+    "urban_pct": 1.51,
+    "work_participation_rate": 48.92
+  },
+  {
+    "district": "Gadag",
+    "total_population": 685261,
+    "male_population": 347585,
+    "female_population": 337676,
+    "literacy_rate": 62.7,
+    "urban_pct": 0.0,
+    "work_participation_rate": 50.59
+  },
+  {
+    "district": "Dharwad",
+    "total_population": 797484,
+    "male_population": 409416,
+    "female_population": 388068,
+    "literacy_rate": 62.94,
+    "urban_pct": 0.0,
+    "work_participation_rate": 51.06
+  },
+  {
+    "district": "Uttara Kannada",
+    "total_population": 1085019,
+    "male_population": 549554,
+    "female_population": 535465,
+    "literacy_rate": 73.3,
+    "urban_pct": 6.16,
+    "work_participation_rate": 44.78
+  },
+  {
+    "district": "Haveri",
+    "total_population": 1255493,
+    "male_population": 645337,
+    "female_population": 610156,
+    "literacy_rate": 66.51,
+    "urban_pct": 1.06,
+    "work_participation_rate": 48.11
+  },
+  {
+    "district": "Bellary",
+    "total_population": 1574041,
+    "male_population": 797044,
+    "female_population": 776997,
+    "literacy_rate": 53.17,
+    "urban_pct": 2.65,
+    "work_participation_rate": 50.35
+  },
+  {
+    "district": "Chitradurga",
+    "total_population": 1347690,
+    "male_population": 684496,
+    "female_population": 663194,
+    "literacy_rate": 62.92,
+    "urban_pct": 1.32,
+    "work_participation_rate": 54.9
+  },
+  {
+    "district": "Davanagere",
+    "total_population": 1329542,
+    "male_population": 674974,
+    "female_population": 654568,
+    "literacy_rate": 63.8,
+    "urban_pct": 0.98,
+    "work_participation_rate": 48.55
+  },
+  {
+    "district": "Shimoga",
+    "total_population": 1129026,
+    "male_population": 565821,
+    "female_population": 563205,
+    "literacy_rate": 68.27,
+    "urban_pct": 0.0,
+    "work_participation_rate": 49.1
+  },
+  {
+    "district": "Udupi",
+    "total_population": 980688,
+    "male_population": 465512,
+    "female_population": 515176,
+    "literacy_rate": 77.49,
+    "urban_pct": 14.01,
+    "work_participation_rate": 44.18
+  },
+  {
+    "district": "Chikmagalur",
+    "total_population": 898453,
+    "male_population": 447545,
+    "female_population": 450908,
+    "literacy_rate": 69.91,
+    "urban_pct": 0.0,
+    "work_participation_rate": 52.63
+  },
+  {
+    "district": "Tumkur",
+    "total_population": 2096829,
+    "male_population": 1057132,
+    "female_population": 1039697,
+    "literacy_rate": 64.74,
+    "urban_pct": 0.81,
+    "work_participation_rate": 53.75
+  },
+  {
+    "district": "Bangalore",
+    "total_population": 1133616,
+    "male_population": 608399,
+    "female_population": 525217,
+    "literacy_rate": 70.82,
+    "urban_pct": 23.11,
+    "work_participation_rate": 47.32
+  },
+  {
+    "district": "Mandya",
+    "total_population": 1512874,
+    "male_population": 758979,
+    "female_population": 753895,
+    "literacy_rate": 61.5,
+    "urban_pct": 1.02,
+    "work_participation_rate": 49.96
+  },
+  {
+    "district": "Hassan",
+    "total_population": 1453696,
+    "male_population": 722756,
+    "female_population": 730940,
+    "literacy_rate": 66.65,
+    "urban_pct": 3.72,
+    "work_participation_rate": 53.94
+  },
+  {
+    "district": "Dakshina Kannada",
+    "total_population": 1379283,
+    "male_population": 683103,
+    "female_population": 696180,
+    "literacy_rate": 77.36,
+    "urban_pct": 20.72,
+    "work_participation_rate": 50.85
+  },
+  {
+    "district": "Mysore",
+    "total_population": 1896498,
+    "male_population": 959636,
+    "female_population": 936862,
+    "literacy_rate": 58.08,
+    "urban_pct": 7.42,
+    "work_participation_rate": 47.2
+  },
+  {
+    "district": "Chamarajanagar",
+    "total_population": 845817,
+    "male_population": 424884,
+    "female_population": 420933,
+    "literacy_rate": 52.29,
+    "urban_pct": 0.0,
+    "work_participation_rate": 48.99
+  },
+  {
+    "district": "Gulbarga",
+    "total_population": 1755460,
+    "male_population": 889530,
+    "female_population": 865930,
+    "literacy_rate": 49.71,
+    "urban_pct": 1.41,
+    "work_participation_rate": 46.51
+  },
+  {
+    "district": "Yadgir",
+    "total_population": 966570,
+    "male_population": 485632,
+    "female_population": 480938,
+    "literacy_rate": 39.51,
+    "urban_pct": 1.34,
+    "work_participation_rate": 48.9
+  },
+  {
+    "district": "Kolar",
+    "total_population": 1085738,
+    "male_population": 550105,
+    "female_population": 535633,
+    "literacy_rate": 61.92,
+    "urban_pct": 2.71,
+    "work_participation_rate": 51.17
+  },
+  {
+    "district": "Chikkaballapura",
+    "total_population": 989826,
+    "male_population": 502522,
+    "female_population": 487304,
+    "literacy_rate": 59.7,
+    "urban_pct": 1.6,
+    "work_participation_rate": 53.98
+  },
+  {
+    "district": "Bangalore Rural",
+    "total_population": 749152,
+    "male_population": 385825,
+    "female_population": 363327,
+    "literacy_rate": 67.54,
+    "urban_pct": 3.6,
+    "work_participation_rate": 48.34
+  },
+  {
+    "district": "Ramanagara",
+    "total_population": 833908,
+    "male_population": 422376,
+    "female_population": 411532,
+    "literacy_rate": 59.43,
+    "urban_pct": 2.28,
+    "work_participation_rate": 51.93
+  }
+]

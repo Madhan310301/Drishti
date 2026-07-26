@@ -1,0 +1,100 @@
+[
+  {
+    "cluster_id": 0,
+    "district": "bengaluru urban",
+    "center_lat": 12.969611633099376,
+    "center_lon": 77.59538938016453,
+    "risk_score": 100.0
+  },
+  {
+    "cluster_id": 1,
+    "district": "bangalore",
+    "center_lat": 13.012366499652142,
+    "center_lon": 77.53901578773903,
+    "risk_score": 0.22
+  },
+  {
+    "cluster_id": 2,
+    "district": "bangalore",
+    "center_lat": 12.990619151832314,
+    "center_lon": 77.53130794434877,
+    "risk_score": 0.14
+  },
+  {
+    "cluster_id": 3,
+    "district": "bangalore",
+    "center_lat": 13.037923226537552,
+    "center_lon": 77.59278537198001,
+    "risk_score": 0.59
+  },
+  {
+    "cluster_id": 4,
+    "district": "bangalore",
+    "center_lat": 12.961381454398802,
+    "center_lon": 77.67177742649235,
+    "risk_score": 0.33
+  },
+  {
+    "cluster_id": 5,
+    "district": "bangalore",
+    "center_lat": 12.9053982366954,
+    "center_lon": 77.60165842463385,
+    "risk_score": 0.26
+  },
+  {
+    "cluster_id": 6,
+    "district": "bengaluru urban",
+    "center_lat": 12.948906063995407,
+    "center_lon": 77.52212166768717,
+    "risk_score": 0.38
+  },
+  {
+    "cluster_id": 7,
+    "district": "bengaluru urban",
+    "center_lat": 12.90033539135781,
+    "center_lon": 77.6452156078283,
+    "risk_score": 0.26
+  },
+  {
+    "cluster_id": 8,
+    "district": "bangalore rural",
+    "center_lat": 13.161261610190977,
+    "center_lon": 77.71134327869193,
+    "risk_score": 0.52
+  },
+  {
+    "cluster_id": 9,
+    "district": "bangalore rural",
+    "center_lat": 13.162353232182763,
+    "center_lon": 77.690809780653,
+    "risk_score": 0.26
+  },
+  {
+    "cluster_id": 10,
+    "district": "mysore",
+    "center_lat": 12.272456493023547,
+    "center_lon": 76.64146549762773,
+    "risk_score": 0.33
+  },
+  {
+    "cluster_id": 11,
+    "district": "mysuru",
+    "center_lat": 12.311366535649638,
+    "center_lon": 76.61331155508837,
+    "risk_score": 0.26
+  },
+  {
+    "cluster_id": 12,
+    "district": "mysore",
+    "center_lat": 12.297238812781687,
+    "center_lon": 76.64534761842378,
+    "risk_score": 0.28
+  },
+  {
+    "cluster_id": 13,
+    "district": "tumkur",
+    "center_lat": 13.326181200987056,
+    "center_lon": 77.08003995509424,
+    "risk_score": 0.26
+  }
+]

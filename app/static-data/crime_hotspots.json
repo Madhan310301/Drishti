@@ -1,0 +1,254 @@
+[
+  {
+    "district": "Bangalore",
+    "risk_score": 100.0,
+    "hotspot_score": 85.84,
+    "crime_forecast": 4677.84,
+    "current_crime_rate_per_100k": 4863.46,
+    "anomaly_score": 1.0,
+    "cluster_id": -1
+  },
+  {
+    "district": "Ramanagara",
+    "risk_score": 19.89,
+    "hotspot_score": 19.6,
+    "crime_forecast": 1034.08,
+    "current_crime_rate_per_100k": 733.17,
+    "anomaly_score": 0.3212,
+    "cluster_id": 0
+  },
+  {
+    "district": "Bangalore Rural",
+    "risk_score": 16.98,
+    "hotspot_score": 14.82,
+    "crime_forecast": 678.34,
+    "current_crime_rate_per_100k": 755.92,
+    "anomaly_score": 0.3695,
+    "cluster_id": -1
+  },
+  {
+    "district": "Dharwad",
+    "risk_score": 16.64,
+    "hotspot_score": 17.58,
+    "crime_forecast": 870.72,
+    "current_crime_rate_per_100k": 631.86,
+    "anomaly_score": 0.2716,
+    "cluster_id": 0
+  },
+  {
+    "district": "Chikkaballapura",
+    "risk_score": 15.43,
+    "hotspot_score": 14.98,
+    "crime_forecast": 826.25,
+    "current_crime_rate_per_100k": 461.5,
+    "anomaly_score": 0.3075,
+    "cluster_id": -1
+  },
+  {
+    "district": "Shimoga",
+    "risk_score": 12.77,
+    "hotspot_score": 15.97,
+    "crime_forecast": 624.45,
+    "current_crime_rate_per_100k": 570.93,
+    "anomaly_score": 0.2196,
+    "cluster_id": 0
+  },
+  {
+    "district": "Chikmagalur",
+    "risk_score": 12.57,
+    "hotspot_score": 12.9,
+    "crime_forecast": 734.37,
+    "current_crime_rate_per_100k": 453.45,
+    "anomaly_score": 0.1865,
+    "cluster_id": 0
+  },
+  {
+    "district": "Udupi",
+    "risk_score": 12.17,
+    "hotspot_score": 8.95,
+    "crime_forecast": 342.26,
+    "current_crime_rate_per_100k": 307.74,
+    "anomaly_score": 0.5121,
+    "cluster_id": -1
+  },
+  {
+    "district": "Dakshina Kannada",
+    "risk_score": 11.89,
+    "hotspot_score": 10.21,
+    "crime_forecast": 469.01,
+    "current_crime_rate_per_100k": 366.35,
+    "anomaly_score": 0.3739,
+    "cluster_id": -1
+  },
+  {
+    "district": "Mysore",
+    "risk_score": 11.55,
+    "hotspot_score": 16.18,
+    "crime_forecast": 599.05,
+    "current_crime_rate_per_100k": 482.47,
+    "anomaly_score": 0.2003,
+    "cluster_id": -1
+  },
+  {
+    "district": "Chitradurga",
+    "risk_score": 10.08,
+    "hotspot_score": 13.41,
+    "crime_forecast": 572.58,
+    "current_crime_rate_per_100k": 410.41,
+    "anomaly_score": 0.1577,
+    "cluster_id": 0
+  },
+  {
+    "district": "Hassan",
+    "risk_score": 10.05,
+    "hotspot_score": 13.35,
+    "crime_forecast": 518.89,
+    "current_crime_rate_per_100k": 419.48,
+    "anomaly_score": 0.1894,
+    "cluster_id": -1
+  },
+  {
+    "district": "Koppal",
+    "risk_score": 9.54,
+    "hotspot_score": 12.52,
+    "crime_forecast": 547.56,
+    "current_crime_rate_per_100k": 274.28,
+    "anomaly_score": 0.2071,
+    "cluster_id": 1
+  },
+  {
+    "district": "Yadgir",
+    "risk_score": 9.49,
+    "hotspot_score": 14.5,
+    "crime_forecast": 277.47,
+    "current_crime_rate_per_100k": 197.5,
+    "anomaly_score": 0.435,
+    "cluster_id": 0
+  },
+  {
+    "district": "Gadag",
+    "risk_score": 9.25,
+    "hotspot_score": 11.94,
+    "crime_forecast": 572.82,
+    "current_crime_rate_per_100k": 290.11,
+    "anomaly_score": 0.1626,
+    "cluster_id": 1
+  },
+  {
+    "district": "Tumkur",
+    "risk_score": 8.96,
+    "hotspot_score": 12.59,
+    "crime_forecast": 547.87,
+    "current_crime_rate_per_100k": 358.49,
+    "anomaly_score": 0.1266,
+    "cluster_id": 0
+  },
+  {
+    "district": "Uttara Kannada",
+    "risk_score": 8.64,
+    "hotspot_score": 9.86,
+    "crime_forecast": 429.2,
+    "current_crime_rate_per_100k": 343.86,
+    "anomaly_score": 0.1968,
+    "cluster_id": -1
+  },
+  {
+    "district": "Gulbarga",
+    "risk_score": 7.66,
+    "hotspot_score": 15.1,
+    "crime_forecast": 439.32,
+    "current_crime_rate_per_100k": 335.13,
+    "anomaly_score": 0.1285,
+    "cluster_id": 0
+  },
+  {
+    "district": "Bidar",
+    "risk_score": 7.6,
+    "hotspot_score": 12.89,
+    "crime_forecast": 341.69,
+    "current_crime_rate_per_100k": 323.13,
+    "anomaly_score": 0.2002,
+    "cluster_id": 0
+  },
+  {
+    "district": "Raichur",
+    "risk_score": 7.17,
+    "hotspot_score": 14.65,
+    "crime_forecast": 364.05,
+    "current_crime_rate_per_100k": 276.25,
+    "anomaly_score": 0.1794,
+    "cluster_id": 0
+  },
+  {
+    "district": "Chamarajanagar",
+    "risk_score": 7.14,
+    "hotspot_score": 14.08,
+    "crime_forecast": 449.38,
+    "current_crime_rate_per_100k": 294.27,
+    "anomaly_score": 0.1074,
+    "cluster_id": -1
+  },
+  {
+    "district": "Kolar",
+    "risk_score": 7.04,
+    "hotspot_score": 13.26,
+    "crime_forecast": 525.28,
+    "current_crime_rate_per_100k": 387.75,
+    "anomaly_score": 0.0,
+    "cluster_id": 0
+  },
+  {
+    "district": "Haveri",
+    "risk_score": 6.75,
+    "hotspot_score": 10.15,
+    "crime_forecast": 405.18,
+    "current_crime_rate_per_100k": 264.6,
+    "anomaly_score": 0.128,
+    "cluster_id": -1
+  },
+  {
+    "district": "Mandya",
+    "risk_score": 6.56,
+    "hotspot_score": 14.18,
+    "crime_forecast": 414.11,
+    "current_crime_rate_per_100k": 389.06,
+    "anomaly_score": 0.0466,
+    "cluster_id": 0
+  },
+  {
+    "district": "Bellary",
+    "risk_score": 5.92,
+    "hotspot_score": 13.99,
+    "crime_forecast": 400.62,
+    "current_crime_rate_per_100k": 287.16,
+    "anomaly_score": 0.0646,
+    "cluster_id": 0
+  },
+  {
+    "district": "Bagalkot",
+    "risk_score": 5.9,
+    "hotspot_score": 12.49,
+    "crime_forecast": 316.92,
+    "current_crime_rate_per_100k": 229.06,
+    "anomaly_score": 0.1516,
+    "cluster_id": 0
+  },
+  {
+    "district": "Davanagere",
+    "risk_score": 5.74,
+    "hotspot_score": 12.48,
+    "crime_forecast": 419.09,
+    "current_crime_rate_per_100k": 348.24,
+    "anomaly_score": 0.0084,
+    "cluster_id": 0
+  },
+  {
+    "district": "Belgaum",
+    "risk_score": 4.99,
+    "hotspot_score": 10.97,
+    "crime_forecast": 306.54,
+    "current_crime_rate_per_100k": 229.17,
+    "anomaly_score": 0.0985,
+    "cluster_id": 0
+  }
+]

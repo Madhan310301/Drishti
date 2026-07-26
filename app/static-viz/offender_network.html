@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 720px;
+                 background-color: #0b1020;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#4cc9f0", "font": {"color": "#e2e8f0"}, "id": "SUS-0001", "label": "Chota Shetty", "shape": "dot", "size": 12, "title": "\u003cb\u003eChota Shetty\u003c/b\u003e\u003cbr\u003eID: SUS-0001\u003cbr\u003eCrime: Murder\u003cbr\u003eGang: Station Road Network\u003cbr\u003eDistrict: Chikmagalur\u003cbr\u003eLinks: 0"}, {"color": "#4cc9f0", "font": {"color": "#e2e8f0"}, "id": "SUS-0002", "label": "Tiger Reddy", "shape": "dot", "size": 22, "title": "\u003cb\u003eTiger Reddy\u003c/b\u003e\u003cbr\u003eID: SUS-0002\u003cbr\u003eCrime: Kidnapping \u0026 Abduction\u003cbr\u003eGang: Station Road Network\u003cbr\u003eDistrict: Belgaum\u003cbr\u003eLinks: 5"}, {"color": "#00f2fe", "font": {"color": "#e2e8f0"}, "id": "SUS-0003", "label": "Bada Kumar", "shape": "dot", "size": 20, "title": "\u003cb\u003eBada Kumar\u003c/b\u003e\u003cbr\u003eID: SUS-0003\u003cbr\u003eCrime: Causing Death by Negligence\u003cbr\u003eGang: Harbor Line Gang\u003cbr\u003eDistrict: Bangalore\u003cbr\u003eLinks: 4"}, {"color": "#80ed99", "font": {"color": "#e2e8f0"}, "id": "SUS-0004", "label": "Bandit Kumar", "shape": "dot", "size": 18, "title": "\u003cb\u003eBandit Kumar\u003c/b\u003e\u003cbr\u003eID: SUS-0004\u003cbr\u003eCrime: Robbery\u003cbr\u003eGang: Yeshwantpur Crew\u003cbr\u003eDistrict: Haveri\u003cbr\u003eLinks: 3"}, {"color": "#80ed99", "font": {"color": "#e2e8f0"}, "id": "SUS-0005", "label": "Scar Raju", "shape": "dot", "size": 20, "title": "\u003cb\u003eScar Raju\u003c/b\u003e\u003cbr\u003eID: SUS-0005\u003cbr\u003eCrime: Cruelty by Husband/Relatives\u003cbr\u003eGang: Yeshwantpur Crew\u003cbr\u003eDistrict: Ramanagara\u003cbr\u003eLinks: 4"}, {"color": "#00f2fe", "font": {"color": "#e2e8f0"}, "id": "SUS-0006", "label": "Chota Master", "shape": "dot", "size": 24, "title": "\u003cb\u003eChota Master\u003c/b\u003e\u003cbr\u003eID: SUS-0006\u003cbr\u003eCrime: Burglary\u003cbr\u003eGang: Harbor Line Gang\u003cbr\u003eDistrict: Koppal\u003cbr\u003eLinks: 6"}, {"color": "#4cc9f0", "font": {"color": "#e2e8f0"}, "id": "SUS-0007", "label": "Bullet Raju", "shape": "dot", "size": 18, "title": "\u003cb\u003eBullet Raju\u003c/b\u003e\u003cbr\u003eID: SUS-0007\u003cbr\u003eCrime: Dacoity\u003cbr\u003eGang: Station Road Network\u003cbr\u003eDistrict: Gadag\u003cbr\u003eLinks: 3"}, {"color": "#80ed99", "font": {"color": "#e2e8f0"}, "id": "SUS-0008", "label": "Viper Swamy", "shape": "dot", "size": 16, "title": "\u003cb\u003eViper Swamy\u003c/b\u003e\u003cbr\u003eID: SUS-0008\u003cbr\u003eCrime: Kidnapping \u0026 Abduction\u003cbr\u003eGang: Yeshwantpur Crew\u003cbr\u003eDistrict: Tumkur\u003cbr\u003eLinks: 2"}, {"color": "#00f2fe", "font": {"color": "#e2e8f0"}, "id": "SUS-0009", "label": "Viper Shetty", "shape": "dot", "size": 18, "title": "\u003cb\u003eViper Shetty\u003c/b\u003e\u003cbr\u003eID: SUS-0009\u003cbr\u003eCrime: Culpable Homicide\u003cbr\u003eGang: Harbor Line Gang\u003cbr\u003eDistrict: Belgaum\u003cbr\u003eLinks: 3"}, {"color": "#7209b7", "font": {"color": "#e2e8f0"}, "id": "SUS-0010", "label": "Steel Bhai", "shape": "dot", "size": 24, "title": "\u003cb\u003eSteel Bhai\u003c/b\u003e\u003cbr\u003eID: SUS-0010\u003cbr\u003eCrime: Other IPC Crimes\u003cbr\u003eGang: Northside Collective\u003cbr\u003eDistrict: Udupi\u003cbr\u003eLinks: 6"}, {"color": "#4361ee", "font": {"color": "#e2e8f0"}, "id": "SUS-0011", "label": "Shadow Setty", "shape": "dot", "size": 22, "title": "\u003cb\u003eShadow Setty\u003c/b\u003e\u003cbr\u003eID: SUS-0011\u003cbr\u003eCrime: Cruelty by Husband/Relatives\u003cbr\u003eGang: Silk Board Syndicate\u003cbr\u003eDistrict: Dharwad\u003cbr\u003eLinks: 5"}, {"color": "#f72585", "font": {"color": "#e2e8f0"}, "id": "SUS-0012", "label": "Cobra Iyer", "shape": "dot", "size": 16, "title": "\u003cb\u003eCobra Iyer\u003c/b\u003e\u003cbr\u003eID: SUS-0012\u003cbr\u003eCrime: Other IPC Crimes\u003cbr\u003eGang: Independent\u003cbr\u003eDistrict: Davanagere\u003cbr\u003eLinks: 2"}, {"color": "#4361ee", "font": {"color": "#e2e8f0"}, "id": "SUS-0013", "label": "Blade Rao", "shape": "dot", "size": 16, "title": "\u003cb\u003eBlade Rao\u003c/b\u003e\u003cbr\u003eID: SUS-0013\u003cbr\u003eCrime: Culpable Homicide\u003cbr\u003eGang: Silk Board Syndicate\u003cbr\u003eDistrict: Raichur\u003cbr\u003eLinks: 2"}, {"color": "#f72585", "font": {"color": "#e2e8f0"}, "id": "SUS-0014", "label": "Tiger Iyer", "shape": "dot", "size": 14, "title": "\u003cb\u003eTiger Iyer\u003c/b\u003e\u003cbr\u003eID: SUS-0014\u003cbr\u003eCrime: Culpable Homicide\u003cbr\u003eGang: Independent\u003cbr\u003eDistrict: Chikkaballapura\u003cbr\u003eLinks: 1"}, {"color": "#00f2fe", "font": {"color": "#e2e8f0"}, "id": "SUS-0015", "label": "Iron Anna", "shape": "dot", "size": 20, "title": "\u003cb\u003eIron Anna\u003c/b\u003e\u003cbr\u003eID: SUS-0015\u003cbr\u003eCrime: Theft\u003cbr\u003eGang: Harbor Line Gang\u003cbr\u003eDistrict: Mysore\u003cbr\u003eLinks: 4"}, {"color": "#7209b7", "font": {"color": "#e2e8f0"}, "id": "SUS-0016", "label": "Steel Naik", "shape": "dot", "size": 24, "title": "\u003cb\u003eSteel Naik\u003c/b\u003e\u003cbr\u003eID: SUS-0016\u003cbr\u003eCrime: Cheating\u003cbr\u003eGang: Northside Collective\u003cbr\u003eDistrict: Chamarajanagar\u003cbr\u003eLinks: 6"}, {"color": "#3a0ca3", "font": {"color": "#e2e8f0"}, "id": "SUS-0017", "label": "Bada Swamy", "shape": "dot", "size": 16, "title": "\u003cb\u003eBada Swamy\u003c/b\u003e\u003cbr\u003eID: SUS-0017\u003cbr\u003eCrime: Culpable Homicide\u003cbr\u003eGang: Red Hill Outfit\u003cbr\u003eDistrict: Mysore\u003cbr\u003eLinks: 2"}, {"color": "#00f2fe", "font": {"color": "#e2e8f0"}, "id": "SUS-0018", "label": "Wolf Reddy", "shape": "dot", "size": 14, "title": "\u003cb\u003eWolf Reddy\u003c/b\u003e\u003cbr\u003eID: SUS-0018\u003cbr\u003eCrime: Dacoity\u003cbr\u003eGang: Harbor Line Gang\u003cbr\u003eDistrict: Dharwad\u003cbr\u003eLinks: 1"}, {"color": "#f72585", "font": {"color": "#e2e8f0"}, "id": "SUS-0019", "label": "Bullet Reddy", "shape": "dot", "size": 18, "title": "\u003cb\u003eBullet Reddy\u003c/b\u003e\u003cbr\u003eID: SUS-0019\u003cbr\u003eCrime: Criminal Breach of Trust\u003cbr\u003eGang: Independent\u003cbr\u003eDistrict: Tumkur\u003cbr\u003eLinks: 3"}, {"color": "#f72585", "font": {"color": "#e2e8f0"}, "id": "SUS-0020", "label": "Shadow Reddy", "shape": "dot", "size": 14, "title": "\u003cb\u003eShadow Reddy\u003c/b\u003e\u003cbr\u003eID: SUS-0020\u003cbr\u003eCrime: Attempt to Murder\u003cbr\u003eGang: Independent\u003cbr\u003eDistrict: Dakshina Kannada\u003cbr\u003eLinks: 1"}, {"color": "#80ed99", "font": {"color": "#e2e8f0"}, "id": "SUS-0021", "label": "Night Swamy", "shape": "dot", "size": 20, "title": "\u003cb\u003eNight Swamy\u003c/b\u003e\u003cbr\u003eID: SUS-0021\u003cbr\u003eCrime: Culpable Homicide\u003cbr\u003eGang: Yeshwantpur Crew\u003cbr\u003eDistrict: Koppal\u003cbr\u003eLinks: 4"}, {"color": "#4cc9f0", "font": {"color": "#e2e8f0"}, "id": "SUS-0022", "label": "Local Achar", "shape": "dot", "size": 14, "title": "\u003cb\u003eLocal Achar\u003c/b\u003e\u003cbr\u003eID: SUS-0022\u003cbr\u003eCrime: Robbery\u003cbr\u003eGang: Station Road Network\u003cbr\u003eDistrict: Hassan\u003cbr\u003eLinks: 1"}, {"color": "#7209b7", "font": {"color": "#e2e8f0"}, "id": "SUS-0023", "label": "Night Setty", "shape": "dot", "size": 22, "title": "\u003cb\u003eNight Setty\u003c/b\u003e\u003cbr\u003eID: SUS-0023\u003cbr\u003eCrime: Kidnapping \u0026 Abduction\u003cbr\u003eGang: Northside Collective\u003cbr\u003eDistrict: Bellary\u003cbr\u003eLinks: 5"}, {"color": "#00f2fe", "font": {"color": "#e2e8f0"}, "id": "SUS-0024", "label": "Tiger Swamy", "shape": "dot", "size": 18, "title": "\u003cb\u003eTiger Swamy\u003c/b\u003e\u003cbr\u003eID: SUS-0024\u003cbr\u003eCrime: Causing Death by Negligence\u003cbr\u003eGang: Harbor Line Gang\u003cbr\u003eDistrict: Koppal\u003cbr\u003eLinks: 3"}, {"color": "#80ed99", "font": {"color": "#e2e8f0"}, "id": "SUS-0025", "label": "Night Bhai", "shape": "dot", "size": 16, "title": "\u003cb\u003eNight Bhai\u003c/b\u003e\u003cbr\u003eID: SUS-0025\u003cbr\u003eCrime: Burglary\u003cbr\u003eGang: Yeshwantpur Crew\u003cbr\u003eDistrict: Haveri\u003cbr\u003eLinks: 2"}, {"color": "#f72585", "font": {"color": "#e2e8f0"}, "id": "SUS-0026", "label": "Fox Kumar", "shape": "dot", "size": 14, "title": "\u003cb\u003eFox Kumar\u003c/b\u003e\u003cbr\u003eID: SUS-0026\u003cbr\u003eCrime: Attempt to Murder\u003cbr\u003eGang: Independent\u003cbr\u003eDistrict: Belgaum\u003cbr\u003eLinks: 1"}, {"color": "#3a0ca3", "font": {"color": "#e2e8f0"}, "id": "SUS-0027", "label": "Silent Naik", "shape": "dot", "size": 16, "title": "\u003cb\u003eSilent Naik\u003c/b\u003e\u003cbr\u003eID: SUS-0027\u003cbr\u003eCrime: Arson\u003cbr\u003eGang: Red Hill Outfit\u003cbr\u003eDistrict: Bangalore Rural\u003cbr\u003eLinks: 2"}, {"color": "#00f2fe", "font": {"color": "#e2e8f0"}, "id": "SUS-0028", "label": "Night Anna", "shape": "dot", "size": 22, "title": "\u003cb\u003eNight Anna\u003c/b\u003e\u003cbr\u003eID: SUS-0028\u003cbr\u003eCrime: Other IPC Crimes\u003cbr\u003eGang: Harbor Line Gang\u003cbr\u003eDistrict: Haveri\u003cbr\u003eLinks: 5"}, {"color": "#f72585", "font": {"color": "#e2e8f0"}, "id": "SUS-0029", "label": "Bada Shetty", "shape": "dot", "size": 12, "title": "\u003cb\u003eBada Shetty\u003c/b\u003e\u003cbr\u003eID: SUS-0029\u003cbr\u003eCrime: Cruelty by Husband/Relatives\u003cbr\u003eGang: Independent\u003cbr\u003eDistrict: Chikmagalur\u003cbr\u003eLinks: 0"}, {"color": "#7209b7", "font": {"color": "#e2e8f0"}, "id": "SUS-0030", "label": "Chota Achar", "shape": "dot", "size": 14, "title": "\u003cb\u003eChota Achar\u003c/b\u003e\u003cbr\u003eID: SUS-0030\u003cbr\u003eCrime: Rape\u003cbr\u003eGang: Northside Collective\u003cbr\u003eDistrict: Gadag\u003cbr\u003eLinks: 1"}, {"color": "#4cc9f0", "font": {"color": "#e2e8f0"}, "id": "SUS-0031", "label": "Wolf Setty", "shape": "dot", "size": 18, "title": "\u003cb\u003eWolf Setty\u003c/b\u003e\u003cbr\u003eID: SUS-0031\u003cbr\u003eCrime: Murder\u003cbr\u003eGang: Station Road Network\u003cbr\u003eDistrict: Shimoga\u003cbr\u003eLinks: 3"}, {"color": "#4361ee", "font": {"color": "#e2e8f0"}, "id": "SUS-0032", "label": "Bullet Naik", "shape": "dot", "size": 16, "title": "\u003cb\u003eBullet Naik\u003c/b\u003e\u003cbr\u003eID: SUS-0032\u003cbr\u003eCrime: Assault on Women\u003cbr\u003eGang: Silk Board Syndicate\u003cbr\u003eDistrict: Yadgir\u003cbr\u003eLinks: 2"}, {"color": "#3a0ca3", "font": {"color": "#e2e8f0"}, "id": "SUS-0033", "label": "Chota Iyer", "shape": "dot", "size": 20, "title": "\u003cb\u003eChota Iyer\u003c/b\u003e\u003cbr\u003eID: SUS-0033\u003cbr\u003eCrime: Assault on Women\u003cbr\u003eGang: Red Hill Outfit\u003cbr\u003eDistrict: Chamarajanagar\u003cbr\u003eLinks: 4"}, {"color": "#3a0ca3", "font": {"color": "#e2e8f0"}, "id": "SUS-0034", "label": "Silent Bhai", "shape": "dot", "size": 16, "title": "\u003cb\u003eSilent Bhai\u003c/b\u003e\u003cbr\u003eID: SUS-0034\u003cbr\u003eCrime: Dacoity\u003cbr\u003eGang: Red Hill Outfit\u003cbr\u003eDistrict: Tumkur\u003cbr\u003eLinks: 2"}, {"color": "#7209b7", "font": {"color": "#e2e8f0"}, "id": "SUS-0035", "label": "Hawk Raju", "shape": "dot", "size": 20, "title": "\u003cb\u003eHawk Raju\u003c/b\u003e\u003cbr\u003eID: SUS-0035\u003cbr\u003eCrime: Other IPC Crimes\u003cbr\u003eGang: Northside Collective\u003cbr\u003eDistrict: Hassan\u003cbr\u003eLinks: 4"}, {"color": "#f72585", "font": {"color": "#e2e8f0"}, "id": "SUS-0036", "label": "Bandit Shetty", "shape": "dot", "size": 16, "title": "\u003cb\u003eBandit Shetty\u003c/b\u003e\u003cbr\u003eID: SUS-0036\u003cbr\u003eCrime: Cheating\u003cbr\u003eGang: Independent\u003cbr\u003eDistrict: Udupi\u003cbr\u003eLinks: 2"}, {"color": "#80ed99", "font": {"color": "#e2e8f0"}, "id": "SUS-0037", "label": "Raven Reddy", "shape": "dot", "size": 20, "title": "\u003cb\u003eRaven Reddy\u003c/b\u003e\u003cbr\u003eID: SUS-0037\u003cbr\u003eCrime: Attempt to Murder\u003cbr\u003eGang: Yeshwantpur Crew\u003cbr\u003eDistrict: Koppal\u003cbr\u003eLinks: 4"}, {"color": "#f72585", "font": {"color": "#e2e8f0"}, "id": "SUS-0038", "label": "Cobra Kumar", "shape": "dot", "size": 18, "title": "\u003cb\u003eCobra Kumar\u003c/b\u003e\u003cbr\u003eID: SUS-0038\u003cbr\u003eCrime: Dowry Deaths\u003cbr\u003eGang: Independent\u003cbr\u003eDistrict: Bangalore Rural\u003cbr\u003eLinks: 3"}, {"color": "#4cc9f0", "font": {"color": "#e2e8f0"}, "id": "SUS-0039", "label": "Rusty Gowda", "shape": "dot", "size": 16, "title": "\u003cb\u003eRusty Gowda\u003c/b\u003e\u003cbr\u003eID: SUS-0039\u003cbr\u003eCrime: Kidnapping \u0026 Abduction\u003cbr\u003eGang: Station Road Network\u003cbr\u003eDistrict: Hassan\u003cbr\u003eLinks: 2"}, {"color": "#3a0ca3", "font": {"color": "#e2e8f0"}, "id": "SUS-0040", "label": "Rusty Naik", "shape": "dot", "size": 22, "title": "\u003cb\u003eRusty Naik\u003c/b\u003e\u003cbr\u003eID: SUS-0040\u003cbr\u003eCrime: Theft\u003cbr\u003eGang: Red Hill Outfit\u003cbr\u003eDistrict: Yadgir\u003cbr\u003eLinks: 5"}, {"color": "#3a0ca3", "font": {"color": "#e2e8f0"}, "id": "SUS-0041", "label": "Scar Master", "shape": "dot", "size": 22, "title": "\u003cb\u003eScar Master\u003c/b\u003e\u003cbr\u003eID: SUS-0041\u003cbr\u003eCrime: Robbery\u003cbr\u003eGang: Red Hill Outfit\u003cbr\u003eDistrict: Tumkur\u003cbr\u003eLinks: 5"}, {"color": "#00f2fe", "font": {"color": "#e2e8f0"}, "id": "SUS-0042", "label": "Loose Rao", "shape": "dot", "size": 24, "title": "\u003cb\u003eLoose Rao\u003c/b\u003e\u003cbr\u003eID: SUS-0042\u003cbr\u003eCrime: Riots\u003cbr\u003eGang: Harbor Line Gang\u003cbr\u003eDistrict: Raichur\u003cbr\u003eLinks: 6"}, {"color": "#3a0ca3", "font": {"color": "#e2e8f0"}, "id": "SUS-0043", "label": "Chota Bhai", "shape": "dot", "size": 16, "title": "\u003cb\u003eChota Bhai\u003c/b\u003e\u003cbr\u003eID: SUS-0043\u003cbr\u003eCrime: Hurt/Grievous Hurt\u003cbr\u003eGang: Red Hill Outfit\u003cbr\u003eDistrict: Gulbarga\u003cbr\u003eLinks: 2"}, {"color": "#4361ee", "font": {"color": "#e2e8f0"}, "id": "SUS-0044", "label": "Iron Reddy", "shape": "dot", "size": 24, "title": "\u003cb\u003eIron Reddy\u003c/b\u003e\u003cbr\u003eID: SUS-0044\u003cbr\u003eCrime: Burglary\u003cbr\u003eGang: Silk Board Syndicate\u003cbr\u003eDistrict: Dakshina Kannada\u003cbr\u003eLinks: 6"}, {"color": "#80ed99", "font": {"color": "#e2e8f0"}, "id": "SUS-0045", "label": "Bandit Reddy", "shape": "dot", "size": 18, "title": "\u003cb\u003eBandit Reddy\u003c/b\u003e\u003cbr\u003eID: SUS-0045\u003cbr\u003eCrime: Causing Death by Negligence\u003cbr\u003eGang: Yeshwantpur Crew\u003cbr\u003eDistrict: Bagalkot\u003cbr\u003eLinks: 3"}]);
+                  edges = new vis.DataSet([{"color": "#ff4d6d", "from": "SUS-0002", "title": "same_gang (FIR FIR-2024-00001)", "to": "SUS-0007", "width": 1.6}, {"color": "#ffd166", "from": "SUS-0002", "title": "associate (FIR FIR-2020-00002)", "to": "SUS-0014", "width": 3.4}, {"color": "#ffd166", "from": "SUS-0002", "title": "associate (FIR FIR-2024-00003)", "to": "SUS-0016", "width": 4.0}, {"color": "#4cc9f0", "from": "SUS-0002", "title": "shared_mo (FIR FIR-2022-00004)", "to": "SUS-0028", "width": 2.2}, {"color": "#4cc9f0", "from": "SUS-0002", "title": "shared_mo (FIR FIR-2021-00005)", "to": "SUS-0037", "width": 2.8}, {"color": "#ff4d6d", "from": "SUS-0003", "title": "same_gang (FIR FIR-2023-00006)", "to": "SUS-0009", "width": 2.2}, {"color": "#4cc9f0", "from": "SUS-0003", "title": "shared_mo (FIR FIR-2023-00007)", "to": "SUS-0010", "width": 2.8}, {"color": "#ff4d6d", "from": "SUS-0003", "title": "same_gang (FIR FIR-2026-00008)", "to": "SUS-0028", "width": 1.6}, {"color": "#ff4d6d", "from": "SUS-0003", "title": "same_gang (FIR FIR-2020-00009)", "to": "SUS-0042", "width": 3.4}, {"color": "#ff4d6d", "from": "SUS-0004", "title": "same_gang (FIR FIR-2024-00010)", "to": "SUS-0021", "width": 4.0}, {"color": "#94a3b8", "from": "SUS-0004", "title": "co_accused (FIR FIR-2020-00011)", "to": "SUS-0023", "width": 4.0}, {"color": "#ff4d6d", "from": "SUS-0004", "title": "same_gang (FIR FIR-2024-00012)", "to": "SUS-0028", "width": 2.8}, {"color": "#ff4d6d", "from": "SUS-0005", "title": "same_gang (FIR FIR-2021-00013)", "to": "SUS-0008", "width": 2.8}, {"color": "#94a3b8", "from": "SUS-0005", "title": "co_accused (FIR FIR-2021-00014)", "to": "SUS-0010", "width": 2.8}, {"color": "#4cc9f0", "from": "SUS-0005", "title": "shared_mo (FIR FIR-2021-00015)", "to": "SUS-0011", "width": 3.4}, {"color": "#ff4d6d", "from": "SUS-0005", "title": "same_gang (FIR FIR-2026-00016)", "to": "SUS-0037", "width": 4.0}, {"color": "#ff4d6d", "from": "SUS-0006", "title": "same_gang (FIR FIR-2025-00017)", "to": "SUS-0009", "width": 2.8}, {"color": "#ff4d6d", "from": "SUS-0006", "title": "same_gang (FIR FIR-2024-00018)", "to": "SUS-0015", "width": 4.0}, {"color": "#94a3b8", "from": "SUS-0006", "title": "co_accused (FIR FIR-2025-00019)", "to": "SUS-0017", "width": 4.0}, {"color": "#4cc9f0", "from": "SUS-0006", "title": "shared_mo (FIR FIR-2025-00020)", "to": "SUS-0023", "width": 1.6}, {"color": "#ff4d6d", "from": "SUS-0006", "title": "same_gang (FIR FIR-2021-00021)", "to": "SUS-0024", "width": 2.8}, {"color": "#94a3b8", "from": "SUS-0006", "title": "co_accused (FIR FIR-2020-00022)", "to": "SUS-0039", "width": 4.0}, {"color": "#ff4d6d", "from": "SUS-0007", "title": "same_gang (FIR FIR-2022-00023)", "to": "SUS-0016", "width": 2.8}, {"color": "#ffd166", "from": "SUS-0007", "title": "associate (FIR FIR-2021-00024)", "to": "SUS-0033", "width": 2.8}, {"color": "#ff4d6d", "from": "SUS-0008", "title": "same_gang (FIR FIR-2025-00025)", "to": "SUS-0038", "width": 2.8}, {"color": "#ffd166", "from": "SUS-0009", "title": "associate (FIR FIR-2023-00026)", "to": "SUS-0035", "width": 2.8}, {"color": "#ff4d6d", "from": "SUS-0010", "title": "same_gang (FIR FIR-2026-00027)", "to": "SUS-0023", "width": 1.6}, {"color": "#94a3b8", "from": "SUS-0010", "title": "co_accused (FIR FIR-2025-00028)", "to": "SUS-0041", "width": 3.4}, {"color": "#4cc9f0", "from": "SUS-0010", "title": "shared_mo (FIR FIR-2020-00029)", "to": "SUS-0042", "width": 1.6}, {"color": "#4cc9f0", "from": "SUS-0010", "title": "shared_mo (FIR FIR-2026-00030)", "to": "SUS-0043", "width": 2.2}, {"color": "#4cc9f0", "from": "SUS-0011", "title": "shared_mo (FIR FIR-2021-00031)", "to": "SUS-0016", "width": 3.4}, {"color": "#ff4d6d", "from": "SUS-0011", "title": "same_gang (FIR FIR-2024-00032)", "to": "SUS-0032", "width": 3.4}, {"color": "#ffd166", "from": "SUS-0011", "title": "associate (FIR FIR-2020-00033)", "to": "SUS-0036", "width": 1.6}, {"color": "#ff4d6d", "from": "SUS-0011", "title": "same_gang (FIR FIR-2020-00034)", "to": "SUS-0044", "width": 2.2}, {"color": "#ffd166", "from": "SUS-0012", "title": "associate (FIR FIR-2020-00035)", "to": "SUS-0025", "width": 2.8}, {"color": "#ffd166", "from": "SUS-0012", "title": "associate (FIR FIR-2024-00036)", "to": "SUS-0034", "width": 2.2}, {"color": "#94a3b8", "from": "SUS-0013", "title": "family (FIR FIR-2021-00037)", "to": "SUS-0021", "width": 1.6}, {"color": "#4cc9f0", "from": "SUS-0013", "title": "shared_mo (FIR FIR-2022-00038)", "to": "SUS-0042", "width": 1.6}, {"color": "#ff4d6d", "from": "SUS-0015", "title": "same_gang (FIR FIR-2022-00039)", "to": "SUS-0024", "width": 2.2}, {"color": "#ff4d6d", "from": "SUS-0015", "title": "same_gang (FIR FIR-2025-00040)", "to": "SUS-0030", "width": 1.6}, {"color": "#4cc9f0", "from": "SUS-0015", "title": "shared_mo (FIR FIR-2026-00041)", "to": "SUS-0038", "width": 4.0}, {"color": "#ff4d6d", "from": "SUS-0016", "title": "same_gang (FIR FIR-2026-00042)", "to": "SUS-0023", "width": 3.4}, {"color": "#ffd166", "from": "SUS-0016", "title": "associate (FIR FIR-2025-00043)", "to": "SUS-0031", "width": 2.2}, {"color": "#ff4d6d", "from": "SUS-0016", "title": "same_gang (FIR FIR-2021-00044)", "to": "SUS-0035", "width": 2.2}, {"color": "#ff4d6d", "from": "SUS-0017", "title": "same_gang (FIR FIR-2023-00045)", "to": "SUS-0020", "width": 1.6}, {"color": "#ff4d6d", "from": "SUS-0018", "title": "same_gang (FIR FIR-2025-00046)", "to": "SUS-0021", "width": 2.8}, {"color": "#94a3b8", "from": "SUS-0019", "title": "family (FIR FIR-2026-00047)", "to": "SUS-0037", "width": 2.2}, {"color": "#4cc9f0", "from": "SUS-0019", "title": "shared_mo (FIR FIR-2021-00048)", "to": "SUS-0041", "width": 1.6}, {"color": "#94a3b8", "from": "SUS-0019", "title": "family (FIR FIR-2026-00049)", "to": "SUS-0044", "width": 1.6}, {"color": "#94a3b8", "from": "SUS-0021", "title": "family (FIR FIR-2021-00050)", "to": "SUS-0044", "width": 2.2}, {"color": "#ff4d6d", "from": "SUS-0022", "title": "same_gang (FIR FIR-2026-00051)", "to": "SUS-0031", "width": 3.4}, {"color": "#4cc9f0", "from": "SUS-0023", "title": "shared_mo (FIR FIR-2022-00052)", "to": "SUS-0026", "width": 2.2}, {"color": "#ff4d6d", "from": "SUS-0024", "title": "same_gang (FIR FIR-2021-00053)", "to": "SUS-0042", "width": 1.6}, {"color": "#ff4d6d", "from": "SUS-0025", "title": "same_gang (FIR FIR-2025-00054)", "to": "SUS-0045", "width": 2.2}, {"color": "#94a3b8", "from": "SUS-0027", "title": "family (FIR FIR-2022-00055)", "to": "SUS-0038", "width": 2.8}, {"color": "#94a3b8", "from": "SUS-0027", "title": "co_accused (FIR FIR-2026-00056)", "to": "SUS-0044", "width": 2.8}, {"color": "#4cc9f0", "from": "SUS-0028", "title": "shared_mo (FIR FIR-2025-00057)", "to": "SUS-0033", "width": 4.0}, {"color": "#ff4d6d", "from": "SUS-0028", "title": "same_gang (FIR FIR-2023-00058)", "to": "SUS-0042", "width": 4.0}, {"color": "#4cc9f0", "from": "SUS-0031", "title": "shared_mo (FIR FIR-2020-00059)", "to": "SUS-0035", "width": 1.6}, {"color": "#4cc9f0", "from": "SUS-0032", "title": "shared_mo (FIR FIR-2021-00060)", "to": "SUS-0040", "width": 4.0}, {"color": "#ff4d6d", "from": "SUS-0033", "title": "same_gang (FIR FIR-2022-00061)", "to": "SUS-0040", "width": 1.6}, {"color": "#ff4d6d", "from": "SUS-0033", "title": "same_gang (FIR FIR-2020-00062)", "to": "SUS-0041", "width": 4.0}, {"color": "#94a3b8", "from": "SUS-0034", "title": "family (FIR FIR-2022-00063)", "to": "SUS-0039", "width": 2.8}, {"color": "#94a3b8", "from": "SUS-0035", "title": "family (FIR FIR-2024-00064)", "to": "SUS-0044", "width": 4.0}, {"color": "#94a3b8", "from": "SUS-0036", "title": "co_accused (FIR FIR-2023-00065)", "to": "SUS-0040", "width": 4.0}, {"color": "#ff4d6d", "from": "SUS-0037", "title": "same_gang (FIR FIR-2022-00066)", "to": "SUS-0044", "width": 1.6}, {"color": "#ff4d6d", "from": "SUS-0040", "title": "same_gang (FIR FIR-2025-00067)", "to": "SUS-0041", "width": 3.4}, {"color": "#94a3b8", "from": "SUS-0040", "title": "co_accused (FIR FIR-2024-00068)", "to": "SUS-0042", "width": 4.0}, {"color": "#ff4d6d", "from": "SUS-0041", "title": "same_gang (FIR FIR-2022-00069)", "to": "SUS-0045", "width": 3.4}, {"color": "#94a3b8", "from": "SUS-0043", "title": "co_accused (FIR FIR-2025-00070)", "to": "SUS-0045", "width": 2.8}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.3,
+            "damping": 0.09,
+            "gravitationalConstant": -8000,
+            "springConstant": 0.04,
+            "springLength": 120
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

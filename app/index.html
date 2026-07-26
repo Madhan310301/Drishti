@@ -192,10 +192,10 @@
       </div>
       <div class="panel-body">
         <div class="tabpane active" id="tab-map">
-          <iframe class="viz" src="/data/output/hotspot_map.html"></iframe>
+          <iframe class="viz" src="static-viz/hotspot_map.html"></iframe>
         </div>
         <div class="tabpane" id="tab-net">
-          <iframe class="viz" src="/data/output/offender_network.html"></iframe>
+          <iframe class="viz" src="static-viz/offender_network.html"></iframe>
         </div>
         <div class="tabpane" id="tab-shap">
           <div class="shap-controls">
@@ -217,7 +217,17 @@
 <footer>DRISHTI · Built for Karnataka Police Datathon 2026 · Team Madhan · Sai Ram · Vijay · Kalyan · Jenifa</footer>
 
 <script>
-const API = '';
+// ---- Fully static mode: load snapshots from ./static-data/*.json (no backend) ----
+const D = './static-data/';
+const cache = {};
+async function load(name) {
+  if (cache[name]) return cache[name];
+  const r = await fetch(D + name);
+  const j = await r.json();
+  cache[name] = j;
+  return j;
+}
+
 // clock
 setInterval(() => {
   const d = new Date();
@@ -243,25 +253,48 @@ radius.oninput = () => document.getElementById('radiusVal').textContent = parseF
 // KPIs
 async function loadKPIs() {
   try {
-    const c = await (await fetch(API + '/hotspots/centers')).json();
-    document.getElementById('kpiHotspots').textContent = c.length;
-    const anom = await (await fetch(API + '/health')).status;
-    const crimes = await (await fetch(API + '/analytics/summary')).json().catch(() => null);
-    document.getElementById('kpiIncidents').textContent = crimes ? (crimes.total_incidents ?? '180,742') : '180,742';
+    const centers = await load('hotspot_centers.json');
+    document.getElementById('kpiHotspots').textContent = Array.isArray(centers) ? centers.length : (centers.error ? '--' : '--');
+    const summary = await load('analytics_summary.json');
+    const crimes = summary.total_incidents ?? summary.total_crimes ?? '180,742';
+    document.getElementById('kpiIncidents').textContent = crimes.toLocaleString ? crimes.toLocaleString() : crimes;
+    const anom = summary.total_anomalies_detected ?? summary.anomaly_zones ?? '--';
+    document.getElementById('kpiAnom').textContent = anom;
   } catch(e) { console.warn(e); }
 }
 
-// Patrol
+// Risk summary (sidebar)
+async function loadRiskSummary() {
+  try {
+    const s = await load('analytics_summary.json');
+    const el = document.getElementById('riskSummary');
+    const rows = [];
+    if (s.highest_crime_risk_district) rows.push(['Highest risk', s.highest_crime_risk_district]);
+    if (s.lowest_crime_risk_district) rows.push(['Lowest risk', s.lowest_crime_risk_district]);
+    if (s.avg_crime_rate_per_100k != null) rows.push(['Avg crime /100k', Math.round(s.avg_crime_rate_per_100k)]);
+    if (s.total_districts != null) rows.push(['Districts analyzed', s.total_districts]);
+    el.innerHTML = rows.length
+      ? rows.map(([k,v]) => `<div class="bar-row"><div class="name">${k}</div><div class="bar-val" style="width:auto;text-align:left">${v}</div></div>`).join('')
+      : '<div class="loading">No summary</div>';
+  } catch(e) { document.getElementById('riskSummary').textContent = 'Unavailable'; }
+}
+
+// Patrol: look up precomputed grid cell
 async function runPatrol() {
-  const u = units.value, r = radius.value;
-  const res = await fetch(API + `/patrol/optimize?total_units=${u}&max_radius_km=${r}`, { method: 'POST' });
-  const d = await res.json();
-  document.getElementById('coverage').innerHTML = d.covered_pct + '<small>% risk covered</small>';
-  document.getElementById('uncovered').textContent = d.uncovered_count + ' hotspots uncovered';
-  document.getElementById('kpiCoverage').textContent = d.covered_pct + '%';
+  const u = +units.value, r = parseFloat(radius.value);
+  const grid = await load('patrol_grid.json');
+  const cell = (Array.isArray(grid) ? grid : []).find(g => g.units === u && Math.abs(g.radius - r) < 0.001);
+  if (!cell) {
+    document.getElementById('coverage').innerHTML = '--<small>% risk covered</small>';
+    document.getElementById('uncovered').textContent = 'no data';
+    return;
+  }
+  document.getElementById('coverage').innerHTML = cell.covered_pct + '<small>% risk covered</small>';
+  document.getElementById('uncovered').textContent = cell.uncovered_count + ' hotspots uncovered';
+  document.getElementById('kpiCoverage').textContent = cell.covered_pct + '%';
   const list = document.getElementById('deployList');
-  list.innerHTML = d.assignments.length
-    ? d.assignments.map(a => `<div class="item"><b>🚓</b> ${a.district}</div>`).join('')
+  list.innerHTML = cell.assignments.length
+    ? cell.assignments.map(a => `<div class="item"><b>🚓</b> ${a}</div>`).join('')
     : '<div class="loading">No deployments</div>';
 }
 document.getElementById('runPatrol').onclick = runPatrol;
@@ -269,9 +302,9 @@ document.getElementById('runPatrol').onclick = runPatrol;
 // SHAP
 document.getElementById('shapRun').onclick = async () => {
   const dist = document.getElementById('shapDistrict').value;
-  const res = await fetch(API + '/explain/' + encodeURIComponent(dist));
-  if (!res.ok) { document.getElementById('shapText').textContent = 'No explanation available.'; return; }
-  const d = await res.json();
+  const all = await load('shap_districts.json');
+  const d = all[dist];
+  if (!d || d.error) { document.getElementById('shapText').textContent = 'No explanation available.'; return; }
   document.getElementById('shapText').innerHTML = d.plain_english || '';
   const bars = document.getElementById('shapBars');
   const contribs = (d.contributions || []).slice().sort((a,b)=>b.shap_value-a.shap_value);
@@ -284,12 +317,16 @@ document.getElementById('shapRun').onclick = async () => {
     </div>`).join('');
 };
 
-// Socio-economic scatter (rendered as simple HTML bars)
+// Socio-economic (ranked hotspot risk by district from centers)
 async function loadSocio() {
   const body = document.getElementById('socioBody');
   try {
-    const res = await fetch(API + '/hotspots/centers');
-    const centers = await res.json();
+    const centers = await load('hotspot_centers.json');
+    const list = Array.isArray(centers) ? centers : [];
+    const byDist = {};
+    list.forEach(c => { byDist[c.district] = (byDist[c.district]||0) + (c.risk_score || 0); });
+    const rows = Object.entries(byDist).sort((a,b)=>b[1]-a[1]).slice(0,12);
+    const max = Math.max(...rows.map(r=>r[1]), 1);
     body.innerHTML = `
       <div style="margin-bottom:14px; color:var(--muted); font-size:13px;">
         Unemployment vs Crime — Karnataka districts (illustrative)</div>
@@ -297,11 +334,6 @@ async function loadSocio() {
       <div style="margin-top:16px; color:var(--muted); font-size:12px;">
         Higher unemployment districts tend to show elevated hotspot risk scores.
       </div>`;
-    // synthesize a simple ranked view from hotspot risk by district
-    const byDist = {};
-    centers.forEach(c => { byDist[c.district] = (byDist[c.district]||0) + c.risk_score; });
-    const rows = Object.entries(byDist).sort((a,b)=>b[1]-a[1]).slice(0,12);
-    const max = Math.max(...rows.map(r=>r[1]), 1);
     document.getElementById('socioChart').innerHTML = rows.map(([d,v]) => `
       <div class="bar-row">
         <div class="name">${d}</div>
@@ -311,20 +343,20 @@ async function loadSocio() {
   } catch(e) { body.innerHTML = '<div class="loading">Socio-economic data unavailable.</div>'; }
 }
 
-// SHAP dropdown from API
+// SHAP dropdown from static manifest
 async function loadShapDistricts() {
   try {
-    const list = await (await fetch(API + '/explain/districts')).json();
+    const m = await load('manifest.json');
+    const list = m.shap_districts || [];
     const sel = document.getElementById('shapDistrict');
-    sel.innerHTML = (list.length ? list : ['Bangalore'])
-      .map(d => `<option>${d}</option>`).join('');
+    sel.innerHTML = (list.length ? list : ['Bangalore']).map(d => `<option>${d}</option>`).join('');
   } catch(e) { /* keep default */ }
 }
 
 // init
 loadKPIs();
-loadShapDistricts();
-runPatrol();
+loadRiskSummary();
+loadShapDistricts().then(runPatrol);
 </script>
 </body>
 </html>

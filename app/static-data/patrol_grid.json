@@ -1,0 +1,4508 @@
+[
+  {
+    "units": 1,
+    "radius": 1.0,
+    "covered_pct": 96.1,
+    "uncovered_count": 13,
+    "assignments": [
+      "Station:MG Road PS"
+    ]
+  },
+  {
+    "units": 1,
+    "radius": 2.0,
+    "covered_pct": 96.1,
+    "uncovered_count": 13,
+    "assignments": [
+      "Station:MG Road PS"
+    ]
+  },
+  {
+    "units": 1,
+    "radius": 3.0,
+    "covered_pct": 96.1,
+    "uncovered_count": 13,
+    "assignments": [
+      "Station:MG Road PS"
+    ]
+  },
+  {
+    "units": 1,
+    "radius": 4.0,
+    "covered_pct": 96.1,
+    "uncovered_count": 13,
+    "assignments": [
+      "Station:MG Road PS"
+    ]
+  },
+  {
+    "units": 1,
+    "radius": 5.0,
+    "covered_pct": 96.6,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:Koramangala PS"
+    ]
+  },
+  {
+    "units": 1,
+    "radius": 6.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 10,
+    "assignments": [
+      "Station:Koramangala PS"
+    ]
+  },
+  {
+    "units": 1,
+    "radius": 7.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 10,
+    "assignments": [
+      "Station:Koramangala PS"
+    ]
+  },
+  {
+    "units": 1,
+    "radius": 8.0,
+    "covered_pct": 97.3,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:Rajajinagar PS"
+    ]
+  },
+  {
+    "units": 1,
+    "radius": 9.0,
+    "covered_pct": 97.9,
+    "uncovered_count": 7,
+    "assignments": [
+      "Station:MG Road PS"
+    ]
+  },
+  {
+    "units": 1,
+    "radius": 10.0,
+    "covered_pct": 98.2,
+    "uncovered_count": 6,
+    "assignments": [
+      "Station:MG Road PS"
+    ]
+  },
+  {
+    "units": 2,
+    "radius": 1.0,
+    "covered_pct": 96.6,
+    "uncovered_count": 12,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS"
+    ]
+  },
+  {
+    "units": 2,
+    "radius": 2.0,
+    "covered_pct": 96.6,
+    "uncovered_count": 12,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS"
+    ]
+  },
+  {
+    "units": 2,
+    "radius": 3.0,
+    "covered_pct": 96.7,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 2,
+    "radius": 4.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 10,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 2,
+    "radius": 5.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 8,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 2,
+    "radius": 6.0,
+    "covered_pct": 97.7,
+    "uncovered_count": 7,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 2,
+    "radius": 7.0,
+    "covered_pct": 97.7,
+    "uncovered_count": 7,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 2,
+    "radius": 8.0,
+    "covered_pct": 98.2,
+    "uncovered_count": 6,
+    "assignments": [
+      "Station:Rajajinagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 2,
+    "radius": 9.0,
+    "covered_pct": 98.8,
+    "uncovered_count": 4,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 2,
+    "radius": 10.0,
+    "covered_pct": 99.0,
+    "uncovered_count": 3,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 3,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 3,
+    "radius": 2.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 3,
+    "radius": 3.0,
+    "covered_pct": 97.2,
+    "uncovered_count": 10,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 3,
+    "radius": 4.0,
+    "covered_pct": 97.5,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Hebbal PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 3,
+    "radius": 5.0,
+    "covered_pct": 98.0,
+    "uncovered_count": 7,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Hebbal PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 3,
+    "radius": 6.0,
+    "covered_pct": 98.4,
+    "uncovered_count": 4,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Rajajinagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 3,
+    "radius": 7.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 3,
+    "radius": 8.0,
+    "covered_pct": 99.0,
+    "uncovered_count": 3,
+    "assignments": [
+      "Station:Rajajinagar PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 3,
+    "radius": 9.0,
+    "covered_pct": 99.0,
+    "uncovered_count": 3,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Electronic City PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 3,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 4,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 4,
+    "radius": 2.0,
+    "covered_pct": 97.2,
+    "uncovered_count": 10,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 4,
+    "radius": 3.0,
+    "covered_pct": 97.6,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 4,
+    "radius": 4.0,
+    "covered_pct": 97.8,
+    "uncovered_count": 8,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 4,
+    "radius": 5.0,
+    "covered_pct": 98.3,
+    "uncovered_count": 6,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 4,
+    "radius": 6.0,
+    "covered_pct": 99.0,
+    "uncovered_count": 3,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 4,
+    "radius": 7.0,
+    "covered_pct": 99.0,
+    "uncovered_count": 3,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 4,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Rajajinagar PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 4,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Electronic City PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 4,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 5,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 5,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 5,
+    "radius": 3.0,
+    "covered_pct": 97.8,
+    "uncovered_count": 8,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 5,
+    "radius": 4.0,
+    "covered_pct": 98.2,
+    "uncovered_count": 6,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 5,
+    "radius": 5.0,
+    "covered_pct": 98.7,
+    "uncovered_count": 4,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 5,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 5,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 5,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 5,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Electronic City PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 5,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 6,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 6,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 6,
+    "radius": 3.0,
+    "covered_pct": 98.1,
+    "uncovered_count": 7,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 6,
+    "radius": 4.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 6,
+    "radius": 5.0,
+    "covered_pct": 99.0,
+    "uncovered_count": 3,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 6,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 6,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 6,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 6,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Electronic City PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 6,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 7,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 7,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 7,
+    "radius": 3.0,
+    "covered_pct": 98.3,
+    "uncovered_count": 6,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 7,
+    "radius": 4.0,
+    "covered_pct": 98.8,
+    "uncovered_count": 4,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 7,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 7,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 7,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 7,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 7,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Electronic City PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 7,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 8,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 8,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 8,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 8,
+    "radius": 4.0,
+    "covered_pct": 99.0,
+    "uncovered_count": 3,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 8,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 8,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 8,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 8,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 8,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Electronic City PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 8,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 9,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 9,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 9,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 9,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 9,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 9,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 9,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 9,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 9,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Electronic City PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 9,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 10,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 10,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 10,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 10,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 10,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 10,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 10,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 10,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 10,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Electronic City PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 10,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 11,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 11,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 11,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 11,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 11,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 11,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 11,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 11,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 11,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Electronic City PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 11,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 12,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 12,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 12,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 12,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 12,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 12,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 12,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 12,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 12,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Electronic City PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 12,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 13,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 13,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 13,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 13,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 13,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 13,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 13,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 13,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 13,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Electronic City PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 13,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 14,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 14,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 14,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 14,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 14,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 14,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 14,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 14,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 14,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Electronic City PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 14,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 15,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 15,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 15,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 15,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 15,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 15,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 15,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 15,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 15,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Electronic City PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 15,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 16,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 16,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 16,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 16,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 16,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 16,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 16,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 16,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 16,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Electronic City PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 16,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 17,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 17,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 17,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 17,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 17,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 17,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 17,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 17,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 17,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 17,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Electronic City PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 18,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 18,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 18,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 18,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 18,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 18,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 18,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 18,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 18,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 18,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Electronic City PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 19,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 19,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 19,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 19,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 19,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 19,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 19,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 19,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 19,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 19,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Electronic City PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 20,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 20,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 20,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 20,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 20,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 20,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 20,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 20,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 20,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 20,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Electronic City PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 21,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 21,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 21,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 21,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 21,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 21,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 21,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 21,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 21,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 21,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Electronic City PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 22,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 22,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 22,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 22,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 22,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 22,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 22,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 22,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 22,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 22,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Electronic City PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 23,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 23,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 23,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 23,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 23,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 23,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 23,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 23,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 23,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 23,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Electronic City PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 24,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 24,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 24,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 24,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 24,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 24,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 24,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 24,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 24,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 24,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Electronic City PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 25,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 25,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 25,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 25,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 25,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 25,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 25,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 25,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 25,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 25,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Electronic City PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 26,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 26,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 26,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 26,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 26,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 26,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 26,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 26,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 26,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 26,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Electronic City PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 27,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 27,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 27,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 27,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 27,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 27,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 27,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 27,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 27,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 27,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Electronic City PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 28,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 28,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 28,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 28,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 28,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 28,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 28,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 28,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 28,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 28,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Electronic City PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 29,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 29,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 29,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 29,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 29,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 29,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 29,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 29,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 29,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 29,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Electronic City PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 30,
+    "radius": 1.0,
+    "covered_pct": 96.9,
+    "uncovered_count": 11,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 30,
+    "radius": 2.0,
+    "covered_pct": 97.4,
+    "uncovered_count": 9,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:JP Nagar PS",
+      "Station:Mysuru PS"
+    ]
+  },
+  {
+    "units": 30,
+    "radius": 3.0,
+    "covered_pct": 98.5,
+    "uncovered_count": 5,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Kengeri PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 30,
+    "radius": 4.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 30,
+    "radius": 5.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 30,
+    "radius": 6.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 30,
+    "radius": 7.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 30,
+    "radius": 8.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 30,
+    "radius": 9.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  },
+  {
+    "units": 30,
+    "radius": 10.0,
+    "covered_pct": 99.3,
+    "uncovered_count": 2,
+    "assignments": [
+      "Station:MG Road PS",
+      "Station:Koramangala PS",
+      "Station:Yeshwantpur PS",
+      "Station:HSR Layout PS",
+      "Station:Rajajinagar PS",
+      "Station:Indiranagar PS",
+      "Station:JP Nagar PS",
+      "Station:Marathahalli PS",
+      "Station:Hebbal PS",
+      "Station:Kengeri PS",
+      "Station:Electronic City PS",
+      "Station:Ulsoor PS",
+      "Station:Banaswadi PS",
+      "Station:Mysuru PS",
+      "Station:Tumakuru PS"
+    ]
+  }
+]
