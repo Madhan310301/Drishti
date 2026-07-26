@@ -26,6 +26,9 @@ logs/
 # Windows
 Thumbs.db
 
+# Manual-required ignore (generated graph HTML)
+offender_graph.html
+
 # Local database (generated at runtime)
 *.db
 drishti.db
