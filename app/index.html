@@ -242,7 +242,18 @@ async function loadViz(tab, file, mountId) {
   const mount = document.getElementById(mountId);
   try {
     const html = await (await fetch('static-viz/' + file)).text();
-    mount.innerHTML = html;
+    // Use an inline srcdoc iframe: the document is inline (no HTTP fetch), so
+    // the host's X-Frame-Options: DENY does NOT apply, AND scripts/styles in
+    // the map HTML execute normally (unlike innerHTML injection).
+    const f = document.createElement('iframe');
+    f.className = 'viz';
+    f.srcdoc = html;
+    f.style.border = 'none';
+    f.style.width = '100%';
+    f.style.height = '100%';
+    f.style.background = '#0c1322';
+    mount.innerHTML = '';
+    mount.appendChild(f);
     vizLoaded[tab] = true;
   } catch (e) {
     mount.innerHTML = '<div class="loading">Map failed to load.</div>';
