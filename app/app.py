@@ -59,20 +59,15 @@ st.write("Allocate limited Bengaluru patrol units to maximise risk coverage.")
 
 try:
     centers = pd.read_csv(HOTSPOT_CENTERS_FILE)
-    bengaluru = centers[
-        (centers["center_lat"].between(12.7, 13.25)) & (centers["center_lon"].between(77.4, 77.95))
-    ].reset_index(drop=True)
-    if bengaluru.empty:
-        bengaluru = centers
 except Exception:
     st.error("Hotspot centers not found. Run: python -m backend.ml.hotspots")
-    bengaluru = pd.DataFrame(columns=["center_lat", "center_lon", "risk_score"])
+    centers = pd.DataFrame(columns=["center_lat", "center_lon", "risk_score"])
 
 units = st.slider("Patrol units available", 1, 15, 5, key="patrol_units")
 radius = st.slider("Coverage radius (km)", 1.0, 10.0, 3.0, 0.5, key="patrol_radius")
 
-if not bengaluru.empty:
-    result = solve_patrol(bengaluru, num_units=units, max_radius_km=radius)
+if not centers.empty:
+    result = solve_patrol(centers, num_units=units, max_radius_km=radius)
     c1, c2, c3 = st.columns(3)
     c1.metric("Risk Covered", f"{result['covered_pct']}%")
     c2.metric("Hotspots Uncovered", result["uncovered_count"])

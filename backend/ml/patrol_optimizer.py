@@ -55,6 +55,32 @@ BASE_STATIONS = [
     (12.8438, 77.6593, "Electronic City PS"),
     (12.9600, 77.6400, "Ulsoor PS"),
     (13.0200, 77.6500, "Banaswadi PS"),
+    # Additional Karnataka city police stations (real district HQ coordinates)
+    # so the optimizer can cover the whole state, not just Bengaluru.
+    (12.2958, 76.6394, "Mysuru PS"),
+    (15.8497, 74.4977, "Belagavi PS"),
+    (15.4589, 75.0078, "Dharwad PS"),
+    (13.9299, 75.5681, "Shivamogga PS"),
+    (15.1394, 76.9214, "Ballari PS"),
+    (16.8302, 75.7100, "Vijayapura PS"),
+    (17.3297, 76.8343, "Kalaburagi PS"),
+    (13.0068, 76.1025, "Hassan PS"),
+    (14.4644, 75.9218, "Davanagere PS"),
+    (13.3409, 77.1025, "Tumakuru PS"),
+    (12.5216, 76.8964, "Mandya PS"),
+    (13.4354, 77.7293, "Chikkaballapura PS"),
+    (16.1783, 75.6947, "Bagalkot PS"),
+    (14.7947, 75.4043, "Haveri PS"),
+    (15.4189, 75.6333, "Gadag PS"),
+    (15.3454, 76.2105, "Koppal PS"),
+    (16.2120, 77.3439, "Raichur PS"),
+    (12.8700, 75.4200, "Mangaluru PS"),
+    (13.3400, 74.7450, "Udupi PS"),
+    (13.1367, 78.1326, "Kolar PS"),
+    (14.2252, 76.3980, "Chitradurga PS"),
+    (11.9269, 76.9411, "Chamarajanagar PS"),
+    (16.2020, 76.1317, "Yadgir PS"),
+    (17.9123, 77.5199, "Bidar PS"),
 ]
 
 
@@ -161,16 +187,9 @@ class PatrolOptimizer:
         df = load_csv(self.centers_file)
         if "risk_score" not in df.columns:
             df["risk_score"] = 50.0
-        # The manual's patrol solver is a BENGALURU simulator: all 15 base
-        # stations are in Bengaluru with a 3 km coverage radius, so we feed it
-        # only Bengaluru-region hotspots (statewide hotspots are still used for
-        # the map/visualization). This matches the manual's design intent.
-        bengaluru = df[
-            (df["center_lat"].between(12.7, 13.25)) & (df["center_lon"].between(77.4, 77.95))
-        ].reset_index(drop=True)
-        if bengaluru.empty:
-            bengaluru = df
-        result = solve_patrol(bengaluru, num_units=total_units, max_radius_km=max_radius_km)
+        # Statewide simulator: feed ALL hotspot centers (Bengaluru + other
+        # districts) to the optimizer now that base stations cover Karnataka.
+        result = solve_patrol(df, num_units=total_units, max_radius_km=max_radius_km)
         return {
             "total_units": total_units,
             "max_radius_km": max_radius_km,
