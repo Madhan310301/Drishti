@@ -120,7 +120,11 @@ def serve_dashboard() -> FileResponse:
 if __name__ == "__main__":
     import os
     import uvicorn
-    # PaaS platforms (Zoho Nimbus, Heroku, Render, ...) inject the listen port
-    # via the PORT env var. Bind to it; never use reload in production.
-    port = int(os.environ.get("PORT", 8000))
+    # PaaS platforms inject the listen port via an env var. Zoho Catalyst
+    # AppSail uses X_ZOHO_CATALYST_LISTEN_PORT; others (Nimbus, Heroku,
+    # Render, ...) use PORT. Fall back to 8000 for local runs.
+    port = int(os.environ.get(
+        "X_ZOHO_CATALYST_LISTEN_PORT",
+        os.environ.get("PORT", 8000),
+    ))
     uvicorn.run("backend.api.main:app", host="0.0.0.0", port=port, reload=False)
