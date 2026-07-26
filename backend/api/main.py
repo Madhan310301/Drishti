@@ -14,11 +14,41 @@ from backend.common.logger import get_logger
 from backend.common.constants import PROJECT_ROOT
 from backend.database.connection import init_db
 from backend.api.routes import router
+from backend.etl.config import (
+    HOTSPOT_CENTERS_FILE,
+    HOTSPOT_MAP_HTML,
+    NETWORK_GRAPH_HTML,
+    SHAP_EXPLANATIONS_FILE,
+)
 
 logger = get_logger(__name__)
 
 APP_DIR = PROJECT_ROOT / "app"
 INDEX_HTML = APP_DIR / "index.html"
+
+
+def _ensure_artifacts() -> None:
+    """
+    Generate ML artifacts on startup if they are missing. This makes a fresh
+    `git clone` work with zero manual steps (the generated HTML/JSON files are
+    gitignored, so they only exist after running the pipeline).
+    """
+    try:
+        if not HOTSPOT_CENTERS_FILE.exists():
+            from backend.ml.hotspots import main as hotspots_main
+            hotspots_main()
+        if not HOTSPOT_MAP_HTML.exists():
+            from backend.ml.hotspot_map import HotspotMapBuilder
+            HotspotMapBuilder().build()
+        if not NETWORK_GRAPH_HTML.exists():
+            from backend.ml.network_graph import NetworkGraphBuilder
+            NetworkGraphBuilder().build()
+        if not SHAP_EXPLANATIONS_FILE.exists():
+            from backend.ml.explainability import ShapExplainer
+            ShapExplainer().save()
+        logger.info("Startup artifact check complete.")
+    except Exception as exc:
+        logger.error("Artifact auto-generation failed (dashboard maps may be empty): %s", exc)
 
 
 @asynccontextmanager
@@ -32,6 +62,9 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
         logger.info("Database schema verified.")
     except Exception as exc:
         logger.error(f"Error during database startup initialization: {exc}")
+
+    # Generate ML artifacts (maps, network, SHAP) if missing so a fresh clone works.
+    _ensure_artifacts()
 
     yield
     logger.info("Shutting down Drishti API server...")
