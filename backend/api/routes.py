@@ -167,6 +167,18 @@ def explain_global() -> ShapGlobalResponse:
     )
 
 
+@router.get("/explain/districts", summary="Districts available for SHAP explanation")
+def explain_districts() -> list[str]:
+    """Return the district names the SHAP explainer can explain."""
+    try:
+        explainer = ShapExplainer()
+        if explainer._df is not None:
+            return sorted(explainer._df["district"].tolist())
+    except Exception:
+        pass
+    return []
+
+
 @router.get("/explain/{district}", response_model=ShapDistrictResponse, summary="SHAP District Explanation")
 def explain_district(district: str) -> ShapDistrictResponse:
     """
