@@ -23,6 +23,13 @@ from backend.etl.config import (
 
 logger = get_logger(__name__)
 
+# Ensure the repo root is importable so `import backend...` works regardless of
+# the working directory the PaaS (Nimbus/Catalyst) launches uvicorn from.
+import sys as _sys
+
+if str(PROJECT_ROOT) not in _sys.path:
+    _sys.path.insert(0, str(PROJECT_ROOT))
+
 APP_DIR = PROJECT_ROOT / "app"
 INDEX_HTML = APP_DIR / "index.html"
 

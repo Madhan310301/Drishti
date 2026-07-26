@@ -8,6 +8,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from sqlalchemy import text
 
+from backend.common.exceptions import ProcessingError
 from backend.database.connection import get_db
 from backend.database.queries import (
     get_all_districts,
