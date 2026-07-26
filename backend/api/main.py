@@ -111,5 +111,9 @@ def serve_dashboard() -> FileResponse:
 
 
 if __name__ == "__main__":
+    import os
     import uvicorn
-    uvicorn.run("backend.api.main:app", host="0.0.0.0", port=8000, reload=True)
+    # PaaS platforms (Zoho Nimbus, Heroku, Render, ...) inject the listen port
+    # via the PORT env var. Bind to it; never use reload in production.
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("backend.api.main:app", host="0.0.0.0", port=port, reload=False)
