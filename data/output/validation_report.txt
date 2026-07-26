@@ -1,0 +1,50 @@
+================================================================================
+DRISHTI PREDICTIVE COMMAND CONSOLE - DATASET VALIDATION REPORT
+================================================================================
+Overall Status          : PASSED
+Census Files Validated  : 28
+Crime Files Validated   : 1
+
+DISTRICT CONSISTENCY REPORT
+----------------------------------------
+Unique Census Districts : 28
+Unique Crime Districts  : 31
+Matched Districts       : 28
+Unmatched Census        : None
+Unmatched Crime         : Bijapur, Kodagu, Railways
+
+CENSUS FILES SUMMARY
+----------------------------------------
+- PCA_CDB_2901_F_Census(Sheet1).csv: 1323 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2902_F_Census(Sheet1).csv: 645 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2904_F_Census(Sheet1).csv: 638 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2905_F_Census(Sheet1).csv: 901 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2906_F_Census(Sheet1).csv: 643 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2907_F_Census(Sheet1).csv: 352 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2908_F_Census(Sheet1).csv: 394 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2909_F_Census(Sheet1).csv: 1337 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2910_F_Census(Sheet1).csv: 726 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2911_F_Census(Sheet1).csv: 576 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2912_F_Census(Sheet1).csv: 1084 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2913_F_Census 1(Sheet1).csv: 944 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2914_F_Census(Sheet1).csv: 1551 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2915_F_Census(Sheet1).csv: 264 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2916_F_Census(Sheet1).csv: 1138 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2917_F_Census(Sheet1).csv: 2747 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2918_F_Census(Sheet1).csv: 625 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2919_F_Census(Sheet1).csv: 1500 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2920_F_Census(Sheet1).csv: 2613 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2921_F_Census(Sheet1).csv: 383 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2923_F_Census(Sheet1).csv: 1374 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2924_F_Census(Sheet1).csv: 521 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2925_F_Census(Sheet1).csv: 944 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2926_F_Census(Sheet1).csv: 524 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2927_F_Census(Sheet1).csv: 1819 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2928_F_Census(Sheet1).csv: 1533 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2929_F_Census(Sheet1).csv: 1066 rows, 96 cols, Missing: 0, Dups: 0
+- PCA_CDB_2930_F_Census(Sheet1).csv: 886 rows, 96 cols, Missing: 0, Dups: 0
+
+CRIME FILES SUMMARY
+----------------------------------------
+- Karnataka Crime Data 2016-22.csv: 837 rows, 124 cols, Missing: 38537, Dups: 58
+================================================================================

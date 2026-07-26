@@ -1,0 +1,48 @@
+{
+    "platform": "Drishti \u2013 Predictive Command Console",
+    "status": "SUCCESS",
+    "total_districts": 28,
+    "total_anomalies_detected": 5,
+    "avg_crime_rate_per_100k": 545.89,
+    "highest_crime_risk_district": "Bangalore",
+    "lowest_crime_risk_district": "Belgaum",
+    "top_high_risk_districts": [
+        {
+            "district": "Bangalore",
+            "risk_score": 100.0,
+            "crime_forecast": 4677.84
+        },
+        {
+            "district": "Ramanagara",
+            "risk_score": 19.89,
+            "crime_forecast": 1034.08
+        },
+        {
+            "district": "Bangalore Rural",
+            "risk_score": 16.98,
+            "crime_forecast": 678.34
+        },
+        {
+            "district": "Dharwad",
+            "risk_score": 16.64,
+            "crime_forecast": 870.72
+        },
+        {
+            "district": "Chikkaballapura",
+            "risk_score": 15.43,
+            "crime_forecast": 826.25
+        }
+    ],
+    "models_executed": [
+        "IsolationForest",
+        "DBSCAN",
+        "RandomForestRegressor"
+    ],
+    "outputs_generated": [
+        "hotspot_predictions.csv",
+        "anomaly_scores.csv",
+        "analytics_summary.json",
+        "shap_explanations.json"
+    ],
+    "execution_time_seconds": 0.762
+}

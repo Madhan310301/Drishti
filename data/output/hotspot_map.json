@@ -1,0 +1,10 @@
+{
+    "html_path": "D:\\New folder\\Drishty\\data\\output\\hotspot_map.html",
+    "plotted_count": 28,
+    "missing_coords": [],
+    "bands": {
+        "critical": 1,
+        "low": 27
+    },
+    "deployments_overlaid": 0
+}

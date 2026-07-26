@@ -1,0 +1,47 @@
+{
+    "total_units": 20,
+    "max_per_district": 4,
+    "districts_considered": 28,
+    "baseline_risk": 368.37,
+    "risk_reduced": 67.5,
+    "residual_risk": 300.87,
+    "risk_reduction_pct": 18.32,
+    "assignments": [
+        {
+            "district": "Bangalore",
+            "units_assigned": 4,
+            "risk_score": 100.0,
+            "coverage_fraction": 0.6692,
+            "risk_reduced": 66.92
+        },
+        {
+            "district": "Ramanagara",
+            "units_assigned": 4,
+            "risk_score": 19.89,
+            "coverage_fraction": 0.0268,
+            "risk_reduced": 0.53
+        },
+        {
+            "district": "Bangalore Rural",
+            "units_assigned": 4,
+            "risk_score": 16.98,
+            "coverage_fraction": 0.0023,
+            "risk_reduced": 0.04
+        },
+        {
+            "district": "Dharwad",
+            "units_assigned": 4,
+            "risk_score": 16.64,
+            "coverage_fraction": 0.0002,
+            "risk_reduced": 0.0
+        },
+        {
+            "district": "Chikkaballapura",
+            "units_assigned": 4,
+            "risk_score": 15.43,
+            "coverage_fraction": 0.0,
+            "risk_reduced": 0.0
+        }
+    ],
+    "solver_status": "Optimal"
+}

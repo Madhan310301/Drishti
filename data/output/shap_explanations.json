@@ -1,0 +1,2448 @@
+{
+    "target": "crime_rate_per_100k",
+    "model": "RandomForestRegressor",
+    "base_value": 532.3452,
+    "global_importance": [
+        {
+            "feature": "population_density",
+            "label": "Population Density",
+            "mean_abs_shap": 74.621
+        },
+        {
+            "feature": "female_ratio",
+            "label": "Female Ratio",
+            "mean_abs_shap": 68.2553
+        },
+        {
+            "feature": "crime_rate_per_100k",
+            "label": "Crime Rate / 100k",
+            "mean_abs_shap": 56.2337
+        },
+        {
+            "feature": "normalized_crime_index",
+            "label": "Normalized Crime Index",
+            "mean_abs_shap": 48.6602
+        },
+        {
+            "feature": "crime_severity_score",
+            "label": "Crime Severity Score",
+            "mean_abs_shap": 31.1208
+        },
+        {
+            "feature": "urban_pct",
+            "label": "Urban %",
+            "mean_abs_shap": 23.5517
+        },
+        {
+            "feature": "crime_growth_rate",
+            "label": "Crime Growth Rate",
+            "mean_abs_shap": 16.7666
+        },
+        {
+            "feature": "economic_activity_index",
+            "label": "Economic Activity Index",
+            "mean_abs_shap": 1.4674
+        },
+        {
+            "feature": "literacy_pct",
+            "label": "Literacy %",
+            "mean_abs_shap": 0.5218
+        }
+    ],
+    "explanations": {
+        "Belgaum": {
+            "district": "Belgaum",
+            "base_value": 532.3452,
+            "model_output": 236.911,
+            "contributions": [
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 229.17,
+                    "shap_value": -73.2805,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0068,
+                    "shap_value": -70.3384,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 123.6,
+                    "shap_value": -60.0696,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.492,
+                    "shap_value": -43.4942,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 115.68,
+                    "shap_value": -29.641,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 4.15,
+                    "shap_value": -11.334,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 29.39,
+                    "shap_value": -7.5942,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 60.45,
+                    "shap_value": 1.1219,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 46.61,
+                    "shap_value": -0.8043,
+                    "direction": "reduces_risk"
+                }
+            ],
+            "top_increase": [
+                "Literacy %"
+            ],
+            "top_decrease": [
+                "Crime Rate / 100k",
+                "Normalized Crime Index",
+                "Population Density"
+            ],
+            "plain_english": [
+                "Literacy % (+1.12)",
+                "Crime Rate / 100k (-73.28)",
+                "Normalized Crime Index (-70.34)",
+                "Population Density (-60.07)"
+            ]
+        },
+        "Bagalkot": {
+            "district": "Bagalkot",
+            "base_value": 532.3452,
+            "model_output": 242.5867,
+            "contributions": [
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 229.06,
+                    "shap_value": -72.1166,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0068,
+                    "shap_value": -69.498,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 133.1,
+                    "shap_value": -60.8452,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4967,
+                    "shap_value": -44.4988,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 132.64,
+                    "shap_value": -25.2595,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 3.2,
+                    "shap_value": -11.1423,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 30.64,
+                    "shap_value": -6.8493,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 54.86,
+                    "shap_value": 0.2266,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 45.97,
+                    "shap_value": 0.2247,
+                    "direction": "increases_risk"
+                }
+            ],
+            "top_increase": [
+                "Literacy %",
+                "Economic Activity Index"
+            ],
+            "top_decrease": [
+                "Crime Rate / 100k",
+                "Normalized Crime Index",
+                "Population Density"
+            ],
+            "plain_english": [
+                "Literacy % (+0.23)",
+                "Economic Activity Index (+0.22)",
+                "Crime Rate / 100k (-72.12)",
+                "Normalized Crime Index (-69.50)",
+                "Population Density (-60.85)"
+            ]
+        },
+        "Bidar": {
+            "district": "Bidar",
+            "base_value": 532.3452,
+            "model_output": 325.0486,
+            "contributions": [
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 133.06,
+                    "shap_value": -60.6841,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4901,
+                    "shap_value": -43.3843,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 323.13,
+                    "shap_value": -33.9744,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0269,
+                    "shap_value": -29.119,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 137.78,
+                    "shap_value": -22.6577,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 0.92,
+                    "shap_value": -11.3595,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 5.12,
+                    "shap_value": -5.6576,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 44.26,
+                    "shap_value": -0.2333,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 57.99,
+                    "shap_value": -0.2266,
+                    "direction": "reduces_risk"
+                }
+            ],
+            "top_increase": [],
+            "top_decrease": [
+                "Population Density",
+                "Female Ratio",
+                "Crime Rate / 100k"
+            ],
+            "plain_english": [
+                "Population Density (-60.68)",
+                "Female Ratio (-43.38)",
+                "Crime Rate / 100k (-33.97)"
+            ]
+        },
+        "Raichur": {
+            "district": "Raichur",
+            "base_value": 532.3452,
+            "model_output": 273.8374,
+            "contributions": [
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 134.21,
+                    "shap_value": -61.0347,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 276.25,
+                    "shap_value": -59.2157,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0169,
+                    "shap_value": -52.1835,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.5007,
+                    "shap_value": -44.4753,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 132.0,
+                    "shap_value": -24.613,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 2.27,
+                    "shap_value": -11.0827,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 32.79,
+                    "shap_value": -4.1104,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 50.14,
+                    "shap_value": -1.8967,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 46.26,
+                    "shap_value": 0.1042,
+                    "direction": "increases_risk"
+                }
+            ],
+            "top_increase": [
+                "Literacy %"
+            ],
+            "top_decrease": [
+                "Population Density",
+                "Crime Rate / 100k",
+                "Normalized Crime Index"
+            ],
+            "plain_english": [
+                "Literacy % (+0.10)",
+                "Population Density (-61.03)",
+                "Crime Rate / 100k (-59.22)",
+                "Normalized Crime Index (-52.18)"
+            ]
+        },
+        "Koppal": {
+            "district": "Koppal",
+            "base_value": 532.3452,
+            "model_output": 365.042,
+            "contributions": [
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 85.91,
+                    "shap_value": 86.438,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 132.51,
+                    "shap_value": -60.6524,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 274.28,
+                    "shap_value": -58.5969,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0165,
+                    "shap_value": -52.9006,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4958,
+                    "shap_value": -44.4678,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 129.12,
+                    "shap_value": -24.3961,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 1.51,
+                    "shap_value": -10.8062,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 48.92,
+                    "shap_value": -2.1608,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 56.51,
+                    "shap_value": 0.2397,
+                    "direction": "increases_risk"
+                }
+            ],
+            "top_increase": [
+                "Crime Growth Rate",
+                "Literacy %"
+            ],
+            "top_decrease": [
+                "Population Density",
+                "Crime Rate / 100k",
+                "Normalized Crime Index"
+            ],
+            "plain_english": [
+                "Crime Growth Rate (+86.44)",
+                "Literacy % (+0.24)",
+                "Population Density (-60.65)",
+                "Crime Rate / 100k (-58.60)",
+                "Normalized Crime Index (-52.90)"
+            ]
+        },
+        "Gadag": {
+            "district": "Gadag",
+            "base_value": 532.3452,
+            "model_output": 381.8814,
+            "contributions": [
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 82.05,
+                    "shap_value": 85.9231,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 122.54,
+                    "shap_value": -59.3926,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 290.11,
+                    "shap_value": -53.6713,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0198,
+                    "shap_value": -47.0598,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4928,
+                    "shap_value": -43.4223,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 150.52,
+                    "shap_value": -20.8053,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 0.0,
+                    "shap_value": -11.0469,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 50.59,
+                    "shap_value": -1.2145,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 62.7,
+                    "shap_value": 0.2259,
+                    "direction": "increases_risk"
+                }
+            ],
+            "top_increase": [
+                "Crime Growth Rate",
+                "Literacy %"
+            ],
+            "top_decrease": [
+                "Population Density",
+                "Crime Rate / 100k",
+                "Normalized Crime Index"
+            ],
+            "plain_english": [
+                "Crime Growth Rate (+85.92)",
+                "Literacy % (+0.23)",
+                "Population Density (-59.39)",
+                "Crime Rate / 100k (-53.67)",
+                "Normalized Crime Index (-47.06)"
+            ]
+        },
+        "Dharwad": {
+            "district": "Dharwad",
+            "base_value": 532.3452,
+            "model_output": 636.0728,
+            "contributions": [
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 631.86,
+                    "shap_value": 120.0882,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0931,
+                    "shap_value": 78.9725,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 124.06,
+                    "shap_value": -58.8754,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4866,
+                    "shap_value": -36.0913,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 251.05,
+                    "shap_value": 17.55,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 0.0,
+                    "shap_value": -13.088,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 36.89,
+                    "shap_value": -5.3081,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 62.94,
+                    "shap_value": 1.1435,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 51.06,
+                    "shap_value": -0.6637,
+                    "direction": "reduces_risk"
+                }
+            ],
+            "top_increase": [
+                "Crime Rate / 100k",
+                "Normalized Crime Index",
+                "Crime Severity Score"
+            ],
+            "top_decrease": [
+                "Population Density",
+                "Female Ratio",
+                "Urban %"
+            ],
+            "plain_english": [
+                "Crime Rate / 100k (+120.09)",
+                "Normalized Crime Index (+78.97)",
+                "Crime Severity Score (+17.55)",
+                "Population Density (-58.88)",
+                "Female Ratio (-36.09)",
+                "Urban % (-13.09)"
+            ]
+        },
+        "Uttara Kannada": {
+            "district": "Uttara Kannada",
+            "base_value": 532.3452,
+            "model_output": 342.4524,
+            "contributions": [
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 111.31,
+                    "shap_value": -58.1676,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4935,
+                    "shap_value": -43.7057,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 130.54,
+                    "shap_value": -23.8981,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0314,
+                    "shap_value": -23.3632,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 343.86,
+                    "shap_value": -23.0173,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 6.16,
+                    "shap_value": -11.2202,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 25.33,
+                    "shap_value": -6.2733,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 44.78,
+                    "shap_value": -0.9384,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 73.3,
+                    "shap_value": 0.691,
+                    "direction": "increases_risk"
+                }
+            ],
+            "top_increase": [
+                "Literacy %"
+            ],
+            "top_decrease": [
+                "Population Density",
+                "Female Ratio",
+                "Crime Severity Score"
+            ],
+            "plain_english": [
+                "Literacy % (+0.69)",
+                "Population Density (-58.17)",
+                "Female Ratio (-43.71)",
+                "Crime Severity Score (-23.90)"
+            ]
+        },
+        "Haveri": {
+            "district": "Haveri",
+            "base_value": 532.3452,
+            "model_output": 270.1212,
+            "contributions": [
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 264.6,
+                    "shap_value": -60.8875,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 120.62,
+                    "shap_value": -60.0091,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0144,
+                    "shap_value": -55.1482,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.486,
+                    "shap_value": -42.7152,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 117.86,
+                    "shap_value": -25.4375,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 1.06,
+                    "shap_value": -11.6227,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 54.01,
+                    "shap_value": -4.0754,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 48.11,
+                    "shap_value": -2.5067,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 66.51,
+                    "shap_value": 0.1781,
+                    "direction": "increases_risk"
+                }
+            ],
+            "top_increase": [
+                "Literacy %"
+            ],
+            "top_decrease": [
+                "Crime Rate / 100k",
+                "Population Density",
+                "Normalized Crime Index"
+            ],
+            "plain_english": [
+                "Literacy % (+0.18)",
+                "Crime Rate / 100k (-60.89)",
+                "Population Density (-60.01)",
+                "Normalized Crime Index (-55.15)"
+            ]
+        },
+        "Bellary": {
+            "district": "Bellary",
+            "base_value": 532.3452,
+            "model_output": 289.7339,
+            "contributions": [
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 128.82,
+                    "shap_value": -59.9446,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 287.16,
+                    "shap_value": -54.9437,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0192,
+                    "shap_value": -48.062,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4936,
+                    "shap_value": -43.8191,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 157.75,
+                    "shap_value": -19.0954,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 2.65,
+                    "shap_value": -11.3447,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 38.27,
+                    "shap_value": -4.1344,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 50.35,
+                    "shap_value": -1.5154,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 53.17,
+                    "shap_value": 0.248,
+                    "direction": "increases_risk"
+                }
+            ],
+            "top_increase": [
+                "Literacy %"
+            ],
+            "top_decrease": [
+                "Population Density",
+                "Crime Rate / 100k",
+                "Normalized Crime Index"
+            ],
+            "plain_english": [
+                "Literacy % (+0.25)",
+                "Population Density (-59.94)",
+                "Crime Rate / 100k (-54.94)",
+                "Normalized Crime Index (-48.06)"
+            ]
+        },
+        "Chitradurga": {
+            "district": "Chitradurga",
+            "base_value": 532.3452,
+            "model_output": 410.9789,
+            "contributions": [
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 117.04,
+                    "shap_value": -60.0254,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4921,
+                    "shap_value": -43.1846,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 165.55,
+                    "shap_value": -13.3541,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 1.32,
+                    "shap_value": -10.9639,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 410.41,
+                    "shap_value": 6.5428,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 39.32,
+                    "shap_value": -4.9042,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 54.9,
+                    "shap_value": 3.5203,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0456,
+                    "shap_value": 0.654,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 62.92,
+                    "shap_value": 0.3489,
+                    "direction": "increases_risk"
+                }
+            ],
+            "top_increase": [
+                "Crime Rate / 100k",
+                "Economic Activity Index",
+                "Normalized Crime Index"
+            ],
+            "top_decrease": [
+                "Population Density",
+                "Female Ratio",
+                "Crime Severity Score"
+            ],
+            "plain_english": [
+                "Crime Rate / 100k (+6.54)",
+                "Economic Activity Index (+3.52)",
+                "Normalized Crime Index (+0.65)",
+                "Population Density (-60.03)",
+                "Female Ratio (-43.18)",
+                "Crime Severity Score (-13.35)"
+            ]
+        },
+        "Davanagere": {
+            "district": "Davanagere",
+            "base_value": 532.3452,
+            "model_output": 347.8477,
+            "contributions": [
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 119.49,
+                    "shap_value": -59.4772,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4923,
+                    "shap_value": -43.3112,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 348.24,
+                    "shap_value": -23.3056,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0323,
+                    "shap_value": -22.3323,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 159.05,
+                    "shap_value": -16.3263,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 0.98,
+                    "shap_value": -11.4347,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 20.48,
+                    "shap_value": -6.566,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 48.55,
+                    "shap_value": -1.9434,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 63.8,
+                    "shap_value": 0.1993,
+                    "direction": "increases_risk"
+                }
+            ],
+            "top_increase": [
+                "Literacy %"
+            ],
+            "top_decrease": [
+                "Population Density",
+                "Female Ratio",
+                "Crime Rate / 100k"
+            ],
+            "plain_english": [
+                "Literacy % (+0.20)",
+                "Population Density (-59.48)",
+                "Female Ratio (-43.31)",
+                "Crime Rate / 100k (-23.31)"
+            ]
+        },
+        "Shimoga": {
+            "district": "Shimoga",
+            "base_value": 532.3452,
+            "model_output": 575.7431,
+            "contributions": [
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 570.93,
+                    "shap_value": 91.6795,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.08,
+                    "shap_value": 58.4713,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 108.78,
+                    "shap_value": -57.494,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4988,
+                    "shap_value": -46.0263,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 252.93,
+                    "shap_value": 17.5689,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 0.0,
+                    "shap_value": -13.2472,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 8.46,
+                    "shap_value": -4.2725,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 49.1,
+                    "shap_value": -2.0456,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 68.27,
+                    "shap_value": -1.2362,
+                    "direction": "reduces_risk"
+                }
+            ],
+            "top_increase": [
+                "Crime Rate / 100k",
+                "Normalized Crime Index",
+                "Crime Severity Score"
+            ],
+            "top_decrease": [
+                "Population Density",
+                "Female Ratio",
+                "Urban %"
+            ],
+            "plain_english": [
+                "Crime Rate / 100k (+91.68)",
+                "Normalized Crime Index (+58.47)",
+                "Crime Severity Score (+17.57)",
+                "Population Density (-57.49)",
+                "Female Ratio (-46.03)",
+                "Urban % (-13.25)"
+            ]
+        },
+        "Udupi": {
+            "district": "Udupi",
+            "base_value": 532.3452,
+            "model_output": 302.4529,
+            "contributions": [
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 117.91,
+                    "shap_value": -59.4106,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 307.74,
+                    "shap_value": -48.5237,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.5253,
+                    "shap_value": -43.9996,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0236,
+                    "shap_value": -40.5127,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 142.02,
+                    "shap_value": -20.4854,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 14.01,
+                    "shap_value": -11.3062,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 13.16,
+                    "shap_value": -7.0866,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 77.49,
+                    "shap_value": 1.1387,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 44.18,
+                    "shap_value": 0.2938,
+                    "direction": "increases_risk"
+                }
+            ],
+            "top_increase": [
+                "Literacy %",
+                "Economic Activity Index"
+            ],
+            "top_decrease": [
+                "Population Density",
+                "Crime Rate / 100k",
+                "Female Ratio"
+            ],
+            "plain_english": [
+                "Literacy % (+1.14)",
+                "Economic Activity Index (+0.29)",
+                "Population Density (-59.41)",
+                "Crime Rate / 100k (-48.52)",
+                "Female Ratio (-44.00)"
+            ]
+        },
+        "Chikmagalur": {
+            "district": "Chikmagalur",
+            "base_value": 532.3452,
+            "model_output": 497.1346,
+            "contributions": [
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.5019,
+                    "shap_value": -44.4711,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 453.45,
+                    "shap_value": 32.6115,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0549,
+                    "shap_value": 17.8441,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 102.91,
+                    "shap_value": -13.7749,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 185.32,
+                    "shap_value": -11.6869,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 0.0,
+                    "shap_value": -11.2412,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 47.72,
+                    "shap_value": -5.291,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 52.63,
+                    "shap_value": 0.9982,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 69.91,
+                    "shap_value": -0.1994,
+                    "direction": "reduces_risk"
+                }
+            ],
+            "top_increase": [
+                "Crime Rate / 100k",
+                "Normalized Crime Index",
+                "Economic Activity Index"
+            ],
+            "top_decrease": [
+                "Female Ratio",
+                "Population Density",
+                "Crime Severity Score"
+            ],
+            "plain_english": [
+                "Crime Rate / 100k (+32.61)",
+                "Normalized Crime Index (+17.84)",
+                "Economic Activity Index (+1.00)",
+                "Female Ratio (-44.47)",
+                "Population Density (-13.77)",
+                "Crime Severity Score (-11.69)"
+            ]
+        },
+        "Tumkur": {
+            "district": "Tumkur",
+            "base_value": 532.3452,
+            "model_output": 365.2438,
+            "contributions": [
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 104.49,
+                    "shap_value": -57.2298,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4958,
+                    "shap_value": -43.7924,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0345,
+                    "shap_value": -19.7223,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 358.49,
+                    "shap_value": -18.4513,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 167.48,
+                    "shap_value": -12.8753,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 0.81,
+                    "shap_value": -11.509,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 55.66,
+                    "shap_value": -4.8983,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 53.75,
+                    "shap_value": 1.4943,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 64.74,
+                    "shap_value": -0.1171,
+                    "direction": "reduces_risk"
+                }
+            ],
+            "top_increase": [
+                "Economic Activity Index"
+            ],
+            "top_decrease": [
+                "Population Density",
+                "Female Ratio",
+                "Normalized Crime Index"
+            ],
+            "plain_english": [
+                "Economic Activity Index (+1.49)",
+                "Population Density (-57.23)",
+                "Female Ratio (-43.79)",
+                "Normalized Crime Index (-19.72)"
+            ]
+        },
+        "Bangalore": {
+            "district": "Bangalore",
+            "base_value": 532.3452,
+            "model_output": 3118.5614,
+            "contributions": [
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4633,
+                    "shap_value": 741.0836,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 100.6,
+                    "shap_value": 678.0266,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 1469.31,
+                    "shap_value": 364.6222,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 23.11,
+                    "shap_value": 291.4758,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 1.0,
+                    "shap_value": 241.9525,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 4863.46,
+                    "shap_value": 189.0295,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 81.85,
+                    "shap_value": 81.5548,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 47.32,
+                    "shap_value": -0.9474,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 70.82,
+                    "shap_value": -0.5812,
+                    "direction": "reduces_risk"
+                }
+            ],
+            "top_increase": [
+                "Female Ratio",
+                "Population Density",
+                "Crime Severity Score"
+            ],
+            "top_decrease": [
+                "Economic Activity Index",
+                "Literacy %"
+            ],
+            "plain_english": [
+                "Female Ratio (+741.08)",
+                "Population Density (+678.03)",
+                "Crime Severity Score (+364.62)",
+                "Economic Activity Index (-0.95)",
+                "Literacy % (-0.58)"
+            ]
+        },
+        "Mandya": {
+            "district": "Mandya",
+            "base_value": 532.3452,
+            "model_output": 390.0422,
+            "contributions": [
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 105.33,
+                    "shap_value": -57.2332,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4983,
+                    "shap_value": -43.8132,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 1.02,
+                    "shap_value": -11.8477,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 194.52,
+                    "shap_value": -10.8444,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0411,
+                    "shap_value": -7.5345,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 6.17,
+                    "shap_value": -5.2489,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 389.06,
+                    "shap_value": -4.1454,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 49.96,
+                    "shap_value": -1.8313,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 61.5,
+                    "shap_value": 0.1958,
+                    "direction": "increases_risk"
+                }
+            ],
+            "top_increase": [
+                "Literacy %"
+            ],
+            "top_decrease": [
+                "Population Density",
+                "Female Ratio",
+                "Urban %"
+            ],
+            "plain_english": [
+                "Literacy % (+0.20)",
+                "Population Density (-57.23)",
+                "Female Ratio (-43.81)",
+                "Urban % (-11.85)"
+            ]
+        },
+        "Hassan": {
+            "district": "Hassan",
+            "base_value": 532.3452,
+            "model_output": 462.3016,
+            "contributions": [
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.5028,
+                    "shap_value": -43.7374,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 102.15,
+                    "shap_value": -12.3931,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 3.72,
+                    "shap_value": -11.034,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 190.58,
+                    "shap_value": -10.6784,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 419.48,
+                    "shap_value": 7.4112,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 12.24,
+                    "shap_value": -7.1169,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 53.94,
+                    "shap_value": 3.9055,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0476,
+                    "shap_value": 2.9397,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 66.65,
+                    "shap_value": 0.6597,
+                    "direction": "increases_risk"
+                }
+            ],
+            "top_increase": [
+                "Crime Rate / 100k",
+                "Economic Activity Index",
+                "Normalized Crime Index"
+            ],
+            "top_decrease": [
+                "Female Ratio",
+                "Population Density",
+                "Urban %"
+            ],
+            "plain_english": [
+                "Crime Rate / 100k (+7.41)",
+                "Economic Activity Index (+3.91)",
+                "Normalized Crime Index (+2.94)",
+                "Female Ratio (-43.74)",
+                "Population Density (-12.39)",
+                "Urban % (-11.03)"
+            ]
+        },
+        "Dakshina Kannada": {
+            "district": "Dakshina Kannada",
+            "base_value": 532.3452,
+            "model_output": 456.8594,
+            "contributions": [
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 20.72,
+                    "shap_value": 77.8665,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 122.31,
+                    "shap_value": -59.6041,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.5047,
+                    "shap_value": -43.3183,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 366.35,
+                    "shap_value": -17.8999,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0362,
+                    "shap_value": -14.4404,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 170.33,
+                    "shap_value": -12.3668,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 2.66,
+                    "shap_value": -5.1128,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 50.85,
+                    "shap_value": -1.1109,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 77.36,
+                    "shap_value": 0.5009,
+                    "direction": "increases_risk"
+                }
+            ],
+            "top_increase": [
+                "Urban %",
+                "Literacy %"
+            ],
+            "top_decrease": [
+                "Population Density",
+                "Female Ratio",
+                "Crime Rate / 100k"
+            ],
+            "plain_english": [
+                "Urban % (+77.87)",
+                "Literacy % (+0.50)",
+                "Population Density (-59.60)",
+                "Female Ratio (-43.32)",
+                "Crime Rate / 100k (-17.90)"
+            ]
+        },
+        "Mysore": {
+            "district": "Mysore",
+            "base_value": 532.3452,
+            "model_output": 460.3817,
+            "contributions": [
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 107.52,
+                    "shap_value": -58.441,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.494,
+                    "shap_value": -45.4457,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 482.47,
+                    "shap_value": 34.4278,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0611,
+                    "shap_value": 19.3618,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 7.42,
+                    "shap_value": -10.9339,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 30.12,
+                    "shap_value": -6.3723,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 211.97,
+                    "shap_value": -3.0358,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 47.2,
+                    "shap_value": -1.8537,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 58.08,
+                    "shap_value": 0.3295,
+                    "direction": "increases_risk"
+                }
+            ],
+            "top_increase": [
+                "Crime Rate / 100k",
+                "Normalized Crime Index",
+                "Literacy %"
+            ],
+            "top_decrease": [
+                "Population Density",
+                "Female Ratio",
+                "Urban %"
+            ],
+            "plain_english": [
+                "Crime Rate / 100k (+34.43)",
+                "Normalized Crime Index (+19.36)",
+                "Literacy % (+0.33)",
+                "Population Density (-58.44)",
+                "Female Ratio (-45.45)",
+                "Urban % (-10.93)"
+            ]
+        },
+        "Chamarajanagar": {
+            "district": "Chamarajanagar",
+            "base_value": 532.3452,
+            "model_output": 336.8935,
+            "contributions": [
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 294.27,
+                    "shap_value": -54.1015,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0207,
+                    "shap_value": -47.0319,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4977,
+                    "shap_value": -44.4239,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 151.42,
+                    "shap_value": -20.5247,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 103.57,
+                    "shap_value": -12.6235,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 0.0,
+                    "shap_value": -11.0519,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 33.39,
+                    "shap_value": -4.2378,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 48.99,
+                    "shap_value": -1.7414,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 52.29,
+                    "shap_value": 0.285,
+                    "direction": "increases_risk"
+                }
+            ],
+            "top_increase": [
+                "Literacy %"
+            ],
+            "top_decrease": [
+                "Crime Rate / 100k",
+                "Normalized Crime Index",
+                "Female Ratio"
+            ],
+            "plain_english": [
+                "Literacy % (+0.28)",
+                "Crime Rate / 100k (-54.10)",
+                "Normalized Crime Index (-47.03)",
+                "Female Ratio (-44.42)"
+            ]
+        },
+        "Gulbarga": {
+            "district": "Gulbarga",
+            "base_value": 532.3452,
+            "model_output": 337.838,
+            "contributions": [
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 138.07,
+                    "shap_value": -60.8281,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4933,
+                    "shap_value": -43.6298,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 335.13,
+                    "shap_value": -26.1163,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0295,
+                    "shap_value": -25.4009,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 155.9,
+                    "shap_value": -20.8247,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 1.41,
+                    "shap_value": -10.7289,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 30.04,
+                    "shap_value": -6.1236,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 46.51,
+                    "shap_value": -1.0544,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 49.71,
+                    "shap_value": 0.1995,
+                    "direction": "increases_risk"
+                }
+            ],
+            "top_increase": [
+                "Literacy %"
+            ],
+            "top_decrease": [
+                "Population Density",
+                "Female Ratio",
+                "Crime Rate / 100k"
+            ],
+            "plain_english": [
+                "Literacy % (+0.20)",
+                "Population Density (-60.83)",
+                "Female Ratio (-43.63)",
+                "Crime Rate / 100k (-26.12)"
+            ]
+        },
+        "Yadgir": {
+            "district": "Yadgir",
+            "base_value": 532.3452,
+            "model_output": 216.4215,
+            "contributions": [
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 197.5,
+                    "shap_value": -77.0136,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0,
+                    "shap_value": -73.5406,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 146.9,
+                    "shap_value": -64.3458,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4976,
+                    "shap_value": -45.0252,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 100.89,
+                    "shap_value": -32.3001,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 1.34,
+                    "shap_value": -11.0825,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 28.21,
+                    "shap_value": -9.4085,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 48.9,
+                    "shap_value": -1.6967,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 39.51,
+                    "shap_value": -1.5105,
+                    "direction": "reduces_risk"
+                }
+            ],
+            "top_increase": [],
+            "top_decrease": [
+                "Crime Rate / 100k",
+                "Normalized Crime Index",
+                "Population Density"
+            ],
+            "plain_english": [
+                "Crime Rate / 100k (-77.01)",
+                "Normalized Crime Index (-73.54)",
+                "Population Density (-64.35)"
+            ]
+        },
+        "Kolar": {
+            "district": "Kolar",
+            "base_value": 532.3452,
+            "model_output": 386.4041,
+            "contributions": [
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 116.13,
+                    "shap_value": -58.5569,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4933,
+                    "shap_value": -43.4165,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 159.67,
+                    "shap_value": -13.1535,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 2.71,
+                    "shap_value": -11.0395,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0408,
+                    "shap_value": -9.2807,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 387.75,
+                    "shap_value": -5.1043,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 35.94,
+                    "shap_value": -5.0103,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 51.17,
+                    "shap_value": -0.6385,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 61.92,
+                    "shap_value": 0.2591,
+                    "direction": "increases_risk"
+                }
+            ],
+            "top_increase": [
+                "Literacy %"
+            ],
+            "top_decrease": [
+                "Population Density",
+                "Female Ratio",
+                "Crime Severity Score"
+            ],
+            "plain_english": [
+                "Literacy % (+0.26)",
+                "Population Density (-58.56)",
+                "Female Ratio (-43.42)",
+                "Crime Severity Score (-13.15)"
+            ]
+        },
+        "Chikkaballapura": {
+            "district": "Chikkaballapura",
+            "base_value": 532.3452,
+            "model_output": 550.8335,
+            "contributions": [
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 92.58,
+                    "shap_value": 84.1908,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 110.25,
+                    "shap_value": -55.9892,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4923,
+                    "shap_value": -43.5571,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 461.5,
+                    "shap_value": 33.7531,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.0566,
+                    "shap_value": 18.8464,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 183.77,
+                    "shap_value": -11.2789,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 1.6,
+                    "shap_value": -11.0118,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 53.98,
+                    "shap_value": 3.2581,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 59.7,
+                    "shap_value": 0.2769,
+                    "direction": "increases_risk"
+                }
+            ],
+            "top_increase": [
+                "Crime Growth Rate",
+                "Crime Rate / 100k",
+                "Normalized Crime Index"
+            ],
+            "top_decrease": [
+                "Population Density",
+                "Female Ratio",
+                "Crime Severity Score"
+            ],
+            "plain_english": [
+                "Crime Growth Rate (+84.19)",
+                "Crime Rate / 100k (+33.75)",
+                "Normalized Crime Index (+18.85)",
+                "Population Density (-55.99)",
+                "Female Ratio (-43.56)",
+                "Crime Severity Score (-11.28)"
+            ]
+        },
+        "Bangalore Rural": {
+            "district": "Bangalore Rural",
+            "base_value": 532.3452,
+            "model_output": 678.3353,
+            "contributions": [
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 755.92,
+                    "shap_value": 152.0575,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.1197,
+                    "shap_value": 112.8408,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 109.09,
+                    "shap_value": -54.0641,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.485,
+                    "shap_value": -36.8663,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 123.62,
+                    "shap_value": -21.7936,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 3.6,
+                    "shap_value": -8.9021,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 0.0,
+                    "shap_value": 1.6613,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 67.54,
+                    "shap_value": 1.6165,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 48.34,
+                    "shap_value": -0.5599,
+                    "direction": "reduces_risk"
+                }
+            ],
+            "top_increase": [
+                "Crime Rate / 100k",
+                "Normalized Crime Index",
+                "Crime Growth Rate"
+            ],
+            "top_decrease": [
+                "Population Density",
+                "Female Ratio",
+                "Crime Severity Score"
+            ],
+            "plain_english": [
+                "Crime Rate / 100k (+152.06)",
+                "Normalized Crime Index (+112.84)",
+                "Crime Growth Rate (+1.66)",
+                "Population Density (-54.06)",
+                "Female Ratio (-36.87)",
+                "Crime Severity Score (-21.79)"
+            ]
+        },
+        "Ramanagara": {
+            "district": "Ramanagara",
+            "base_value": 532.3452,
+            "model_output": 737.9451,
+            "contributions": [
+                {
+                    "feature": "crime_rate_per_100k",
+                    "label": "Crime Rate / 100k",
+                    "value": 733.17,
+                    "shap_value": 142.5776,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "normalized_crime_index",
+                    "label": "Normalized Crime Index",
+                    "value": 0.1148,
+                    "shap_value": 103.1342,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "female_ratio",
+                    "label": "Female Ratio",
+                    "value": 0.4935,
+                    "shap_value": -41.9725,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_severity_score",
+                    "label": "Crime Severity Score",
+                    "value": 265.14,
+                    "shap_value": 24.3076,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "population_density",
+                    "label": "Population Density",
+                    "value": 101.95,
+                    "shap_value": -10.1963,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "urban_pct",
+                    "label": "Urban %",
+                    "value": 2.28,
+                    "shap_value": -8.7226,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "crime_growth_rate",
+                    "label": "Crime Growth Rate",
+                    "value": 40.13,
+                    "shap_value": -4.0436,
+                    "direction": "reduces_risk"
+                },
+                {
+                    "feature": "literacy_pct",
+                    "label": "Literacy %",
+                    "value": 59.43,
+                    "shap_value": 0.5512,
+                    "direction": "increases_risk"
+                },
+                {
+                    "feature": "economic_activity_index",
+                    "label": "Economic Activity Index",
+                    "value": 51.93,
+                    "shap_value": -0.0355,
+                    "direction": "reduces_risk"
+                }
+            ],
+            "top_increase": [
+                "Crime Rate / 100k",
+                "Normalized Crime Index",
+                "Crime Severity Score"
+            ],
+            "top_decrease": [
+                "Female Ratio",
+                "Population Density",
+                "Urban %"
+            ],
+            "plain_english": [
+                "Crime Rate / 100k (+142.58)",
+                "Normalized Crime Index (+103.13)",
+                "Crime Severity Score (+24.31)",
+                "Female Ratio (-41.97)",
+                "Population Density (-10.20)",
+                "Urban % (-8.72)"
+            ]
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "html_path": "D:\\New folder\\Drishty\\data\\output\\offender_network.html",
+    "node_count": 45,
+    "edge_count": 70,
+    "district_filter": null,
+    "gangs": [
+        "Harbor Line Gang",
+        "Independent",
+        "Northside Collective",
+        "Red Hill Outfit",
+        "Silk Board Syndicate",
+        "Station Road Network",
+        "Yeshwantpur Crew"
+    ],
+    "top_connected": [
+        {
+            "suspect_id": "SUS-0016",
+            "links": 6
+        },
+        {
+            "suspect_id": "SUS-0010",
+            "links": 6
+        },
+        {
+            "suspect_id": "SUS-0042",
+            "links": 6
+        },
+        {
+            "suspect_id": "SUS-0006",
+            "links": 6
+        },
+        {
+            "suspect_id": "SUS-0044",
+            "links": 6
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+suspect_id,alias,primary_crime_type,gang_name,district
+SUS-0001,Chota Shetty,Murder,Station Road Network,Chikmagalur
+SUS-0002,Tiger Reddy,Kidnapping & Abduction,Station Road Network,Belgaum
+SUS-0003,Bada Kumar,Causing Death by Negligence,Harbor Line Gang,Bangalore
+SUS-0004,Bandit Kumar,Robbery,Yeshwantpur Crew,Haveri
+SUS-0005,Scar Raju,Cruelty by Husband/Relatives,Yeshwantpur Crew,Ramanagara
+SUS-0006,Chota Master,Burglary,Harbor Line Gang,Koppal
+SUS-0007,Bullet Raju,Dacoity,Station Road Network,Gadag
+SUS-0008,Viper Swamy,Kidnapping & Abduction,Yeshwantpur Crew,Tumkur
+SUS-0009,Viper Shetty,Culpable Homicide,Harbor Line Gang,Belgaum
+SUS-0010,Steel Bhai,Other IPC Crimes,Northside Collective,Udupi
+SUS-0011,Shadow Setty,Cruelty by Husband/Relatives,Silk Board Syndicate,Dharwad
+SUS-0012,Cobra Iyer,Other IPC Crimes,Independent,Davanagere
+SUS-0013,Blade Rao,Culpable Homicide,Silk Board Syndicate,Raichur
+SUS-0014,Tiger Iyer,Culpable Homicide,Independent,Chikkaballapura
+SUS-0015,Iron Anna,Theft,Harbor Line Gang,Mysore
+SUS-0016,Steel Naik,Cheating,Northside Collective,Chamarajanagar
+SUS-0017,Bada Swamy,Culpable Homicide,Red Hill Outfit,Mysore
+SUS-0018,Wolf Reddy,Dacoity,Harbor Line Gang,Dharwad
+SUS-0019,Bullet Reddy,Criminal Breach of Trust,Independent,Tumkur
+SUS-0020,Shadow Reddy,Attempt to Murder,Independent,Dakshina Kannada
+SUS-0021,Night Swamy,Culpable Homicide,Yeshwantpur Crew,Koppal
+SUS-0022,Local Achar,Robbery,Station Road Network,Hassan
+SUS-0023,Night Setty,Kidnapping & Abduction,Northside Collective,Bellary
+SUS-0024,Tiger Swamy,Causing Death by Negligence,Harbor Line Gang,Koppal
+SUS-0025,Night Bhai,Burglary,Yeshwantpur Crew,Haveri
+SUS-0026,Fox Kumar,Attempt to Murder,Independent,Belgaum
+SUS-0027,Silent Naik,Arson,Red Hill Outfit,Bangalore Rural
+SUS-0028,Night Anna,Other IPC Crimes,Harbor Line Gang,Haveri
+SUS-0029,Bada Shetty,Cruelty by Husband/Relatives,Independent,Chikmagalur
+SUS-0030,Chota Achar,Rape,Northside Collective,Gadag
+SUS-0031,Wolf Setty,Murder,Station Road Network,Shimoga
+SUS-0032,Bullet Naik,Assault on Women,Silk Board Syndicate,Yadgir
+SUS-0033,Chota Iyer,Assault on Women,Red Hill Outfit,Chamarajanagar
+SUS-0034,Silent Bhai,Dacoity,Red Hill Outfit,Tumkur
+SUS-0035,Hawk Raju,Other IPC Crimes,Northside Collective,Hassan
+SUS-0036,Bandit Shetty,Cheating,Independent,Udupi
+SUS-0037,Raven Reddy,Attempt to Murder,Yeshwantpur Crew,Koppal
+SUS-0038,Cobra Kumar,Dowry Deaths,Independent,Bangalore Rural
+SUS-0039,Rusty Gowda,Kidnapping & Abduction,Station Road Network,Hassan
+SUS-0040,Rusty Naik,Theft,Red Hill Outfit,Yadgir
+SUS-0041,Scar Master,Robbery,Red Hill Outfit,Tumkur
+SUS-0042,Loose Rao,Riots,Harbor Line Gang,Raichur
+SUS-0043,Chota Bhai,Hurt/Grievous Hurt,Red Hill Outfit,Gulbarga
+SUS-0044,Iron Reddy,Burglary,Silk Board Syndicate,Dakshina Kannada
+SUS-0045,Bandit Reddy,Causing Death by Negligence,Yeshwantpur Crew,Bagalkot
