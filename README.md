@@ -35,7 +35,7 @@ Most crime analytics tools generate static heatmaps and stop there—leaving com
 ┌─────────────────────────────────────────────────────────────────────────────────────────┐
 │                                  DRISHTI ENGINE FLOW                                    │
 │                                                                                         │
-│   [Raw Crime Points] ──► [DBSCAN Density Clusters] ──► [Isolation Forest Surge Alerts]   │
+│   [Raw Crime Points] ──► [DBSCAN Density Clusters] ──► [Isolation Forest Surge Alerts]  │
 │                                                                   │                     │
 │   [Real Socio-Econ Stats] ──► [Supervised Risk Proxy] ────────────┤                     │
 │                                                                   ▼                     │
@@ -90,7 +90,7 @@ graph TD
 │ CORE STACK                                                              │
 │                                                                         │
 │   Frontend & Dashboard   : Streamlit · Folium · Plotly Express · Pyvis  │
-│   Machine Learning       : Scikit-learn · DBSCAN · Isolation Forest    │
+│   Machine Learning       : Scikit-learn · DBSCAN · Isolation Forest     │
 │   Explainable AI         : SHAP (SHapley Additive exPlanations)         │
 │   Optimization Engine    : PuLP (CBC Solver) / SciPy / OR-Tools         │
 │   Data Engineering       : Pandas · GeoPandas · NumPy · Shapely         │
