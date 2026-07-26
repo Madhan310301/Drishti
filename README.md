@@ -36,7 +36,7 @@ Most crime analytics tools generate static heatmaps and stop there—leaving com
 ┌─────────────────────────────────────────────────────────────────────────────────────────┐
 │                                  DRISHTI ENGINE FLOW                                    │
 │                                                                                         │
-│   [Raw Crime Points] ──► [DBSCAN Density Clusters] ──► [Isolation Forest Surge Alerts]   │
+│   [Raw Crime Points] ──► [DBSCAN Density Clusters] ──► [Isolation Forest Surge Alerts]  │
 │                                                                   │                     │
 │   [Real Socio-Econ Stats] ──► [Supervised Risk Proxy] ────────────┤                     │
 │                                                                   ▼                     │
@@ -92,11 +92,11 @@ graph TD
 │ CORE STACK                                                              │
 │                                                                         │
 │   Frontend & Dashboard   : Streamlit · Folium · Plotly Express · Pyvis  │
-│   Machine Learning       : Scikit-learn · DBSCAN · Isolation Forest    │
+│   Machine Learning       : Scikit-learn · DBSCAN · Isolation Forest     │
 │   Explainable AI         : SHAP (SHapley Additive exPlanations)         │
 │   Optimization Engine    : PuLP (CBC Solver) / SciPy                    │
-│   Data Engineering       : Pandas · NumPy                              │
-│   Data Sources           : KSP Crime Data 2022 (real) · Karnataka SES  │
+│   Data Engineering       : Pandas · NumPy                               │
+│   Data Sources           : KSP Crime Data 2022 (real) · Karnataka SES   │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -188,17 +188,14 @@ Drishti/
 
 | Member | Role | Key Output / Module |
 | :--- | :--- | :--- |
-| **Madhan** | **Team Leader** | Git Repo Architecture, Integration Testing, Cloud Deployment, Demo Video |
+| **Madhan**  | **Team Leader** | Git Repo Architecture, Integration Testing, Cloud Deployment, Demo Video |
 | **Sai Ram** | **Data Engineer** | Socio-Economic Data, Synthetic Crime Points, Spatial Join Pipeline |
-| **Vijay** | **ML Engineer** | DBSCAN Hotspots (`hotspots.py`), Isolation Forest (`anomalies.py`), SHAP Explainer |
-| **Kalyan** | **Optimization Engineer** | PuLP Patrol Simulator Engine (`patrol_optimizer.py`), Coverage Metrics |
-| **Jenifa** | **Frontend Developer** | Streamlit Dark Command UI (`app.py`), Folium Maps, SHAP Panels, Pyvis Network Graph |
+| **Vijay**   | **ML Engineer** | DBSCAN Hotspots (`hotspots.py`), Isolation Forest (`anomalies.py`), SHAP Explainer |
+| **Kalyan**  | **Optimization Engineer** | PuLP Patrol Simulator Engine (`patrol_optimizer.py`), Coverage Metrics |
+| **Jenifa**  | **Frontend Developer** | Streamlit Dark Command UI (`app.py`), Folium Maps, SHAP Panels, Pyvis Network Graph |
 
 ---
 
-## ⏱️ Submission Deadline
-
-* **Final Hackathon Submission**: `26th July 2026, 08:00 PM IST`
 
 ---
 
