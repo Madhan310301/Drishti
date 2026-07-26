@@ -197,30 +197,48 @@ def explain_district(district: str) -> ShapDistrictResponse:
 @router.post("/patrol/optimize", response_model=PatrolPlanResponse, summary="Patrol Deployment Plan")
 def patrol_optimize(
     total_units: int = Query(default=20, ge=1, le=500, description="Available patrol units tonight"),
-    max_per_district: int | None = Query(default=None, ge=1, le=500, description="Cap per district"),
+    max_radius_km: float = Query(default=3.0, gt=0, le=50, description="Patrol coverage radius (km)"),
 ) -> PatrolPlanResponse:
     """
-    Allocate limited patrol units across districts to maximise crime-risk
-    reduction (PuLP linear program). The manual's Patrol Recommendation Engine.
+    Allocate limited patrol units across Bengaluru hotspots to maximise risk
+    coverage (PuLP linear program). The manual's Patrol Recommendation Engine.
     """
     try:
         optimizer = PatrolOptimizer()
-        plan = optimizer.optimize(total_units=total_units, max_per_district=max_per_district)
+        plan = optimizer.optimize(total_units=total_units, max_radius_km=max_radius_km)
     except Exception as exc:
         raise HTTPException(status_code=500, detail=f"Patrol optimization failed: {exc}")
 
     assignments = [PatrolAssignment(**a) for a in plan["assignments"]]
     return PatrolPlanResponse(
         total_units=plan["total_units"],
-        max_per_district=plan["max_per_district"],
+        max_radius_km=plan["max_radius_km"],
         districts_considered=plan["districts_considered"],
-        baseline_risk=plan["baseline_risk"],
         risk_reduced=plan["risk_reduced"],
-        residual_risk=plan["residual_risk"],
         risk_reduction_pct=plan["risk_reduction_pct"],
+        residual_risk=plan["residual_risk"],
+        covered_pct=plan["covered_pct"],
+        uncovered_count=plan["uncovered_count"],
         solver_status=plan["solver_status"],
         assignments=assignments,
     )
+
+
+@router.get("/hotspots/centers", summary="Hotspot Cluster Centers (DBSCAN)")
+def hotspot_centers() -> list[dict]:
+    """
+    Return DBSCAN hotspot cluster centers with coordinates, for the map and the
+    patrol optimizer. The manual's Task 1 output (hotspot_centers.csv).
+    """
+    try:
+        from backend.etl.config import HOTSPOT_CENTERS_FILE
+        from backend.common.helpers import load_csv
+        if not HOTSPOT_CENTERS_FILE.exists():
+            raise ProcessingError("Hotspot centers not generated. Run the ML pipeline.")
+        df = load_csv(HOTSPOT_CENTERS_FILE)
+        return df.to_dict(orient="records")
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Hotspot centers failed: {exc}")
 
 
 @router.get("/network/graph", response_model=NetworkGraphResponse, summary="Criminal Network Graph")

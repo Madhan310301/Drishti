@@ -100,12 +100,13 @@ class PatrolAssignment(BaseModel):
 
 class PatrolPlanResponse(BaseModel):
     total_units: int
-    max_per_district: int
+    max_radius_km: float
     districts_considered: int
-    baseline_risk: float
     risk_reduced: float
-    residual_risk: float
     risk_reduction_pct: float
+    residual_risk: float
+    covered_pct: float
+    uncovered_count: int
     solver_status: str
     assignments: list[PatrolAssignment]
 
