@@ -337,6 +337,94 @@
                 </div>
             </div>
 
+        <!-- XAI: SHAP Explainability Panel -->
+        <div class="glass-panel p-6 rounded-2xl space-y-4">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h2 class="text-base font-semibold text-white flex items-center gap-2">
+                        <span class="material-symbols-outlined text-brand-accent">insights</span>
+                        Why This Risk? (SHAP Explainable AI)
+                    </h2>
+                    <p class="text-xs text-slate-400">Plain-English drivers behind a district's crime-rate prediction</p>
+                </div>
+                <select id="shapDistrictSelect" class="bg-brand-surface text-white border border-white/20 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:border-brand-secondary">
+                    <option value="">Select district...</option>
+                </select>
+            </div>
+            <div id="shapPlainEnglish" class="text-sm text-slate-200 bg-brand-bg/40 border border-white/5 rounded-xl p-4">
+                Select a district to see its risk explanation.
+            </div>
+            <div id="shapContributions" class="space-y-2"></div>
+            <div class="pt-2 text-xs text-slate-400 flex justify-between">
+                <span>Model: RandomForest + SHAP TreeExplainer</span>
+                <span class="text-brand-cyanGlow">GET /explain/&lt;district&gt;</span>
+            </div>
+        </div>
+
+        <!-- Patrol Deployment Simulator Panel -->
+        <div class="glass-panel p-6 rounded-2xl space-y-4">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h2 class="text-base font-semibold text-white flex items-center gap-2">
+                        <span class="material-symbols-outlined text-emerald-400">shield</span>
+                        Patrol Deployment Optimizer
+                    </h2>
+                    <p class="text-xs text-slate-400">Allocate limited patrol units to maximise risk reduction</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <input type="number" id="patrolUnits" value="20" min="1" max="200"
+                           class="w-20 bg-brand-surface border border-white/15 rounded-lg px-2 py-1.5 text-white text-sm font-mono focus:outline-none focus:border-brand-secondary"/>
+                    <button id="patrolRunBtn" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-gradient-to-r from-emerald-600 to-brand-secondary text-white hover:opacity-90 transition flex items-center gap-1">
+                        <span class="material-symbols-outlined text-sm">rocket_launch</span> Optimize
+                    </button>
+                </div>
+            </div>
+            <div id="patrolSummary" class="grid grid-cols-3 gap-3 text-center text-xs font-mono">
+                <div class="bg-brand-bg/50 p-3 rounded-lg border border-white/5">
+                    <span class="text-slate-400 block text-[10px]">RISK REDUCED</span>
+                    <span id="patrolReduction" class="text-emerald-400 font-bold text-lg">-</span>
+                </div>
+                <div class="bg-brand-bg/50 p-3 rounded-lg border border-white/5">
+                    <span class="text-slate-400 block text-[10px]">RESIDUAL RISK</span>
+                    <span id="patrolResidual" class="text-white font-bold text-lg">-</span>
+                </div>
+                <div class="bg-brand-bg/50 p-3 rounded-lg border border-white/5">
+                    <span class="text-slate-400 block text-[10px]">DISTRICTS</span>
+                    <span id="patrolDistricts" class="text-white font-bold text-lg">-</span>
+                </div>
+            </div>
+            <div id="patrolAssignments" class="space-y-2 max-h-[260px] overflow-y-auto pr-1"></div>
+            <div class="pt-2 text-xs text-slate-400 flex justify-between">
+                <span>Solver: PuLP CBC</span>
+                <span class="text-brand-cyanGlow">POST /patrol/optimize</span>
+            </div>
+        </div>
+
+        <!-- Visual Intelligence: Map + Network -->
+        <div class="glass-panel p-6 rounded-2xl space-y-4">
+            <div class="flex justify-between items-center">
+                <h2 class="text-base font-semibold text-white flex items-center gap-2">
+                    <span class="material-symbols-outlined text-brand-secondary">public</span>
+                    Visual Intelligence
+                </h2>
+                <button id="vizRegenBtn" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-brand-surfaceHigh hover:bg-brand-primary/40 border border-white/10 text-slate-200 transition flex items-center gap-1">
+                    <span class="material-symbols-outlined text-sm">refresh</span> Regenerate
+                </button>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div>
+                    <p class="text-xs text-slate-400 mb-2 flex items-center gap-1"><span class="material-symbols-outlined text-sm text-red-400">local_fire_department</span> Hotspot Map (Folium)</p>
+                    <iframe id="hotspotMapFrame" src="/data/output/hotspot_map.html" class="w-full h-[360px] rounded-xl border border-white/10 bg-brand-bg" title="Hotspot Map"></iframe>
+                </div>
+                <div>
+                    <p class="text-xs text-slate-400 mb-2 flex items-center gap-1"><span class="material-symbols-outlined text-sm text-brand-primaryGlow">hub</span> Criminal Network (PyVis)</p>
+                    <iframe id="networkFrame" src="/data/output/offender_network.html" class="w-full h-[360px] rounded-xl border border-white/10 bg-brand-bg" title="Criminal Network"></iframe>
+                </div>
+            </div>
+            <div class="pt-2 text-xs text-slate-400 flex justify-between">
+                <span>GET /map/hotspots · GET /network/graph</span>
+                <span class="text-brand-cyanGlow">Interactive</span>
+            </div>
         </div>
 
     </div>
@@ -353,6 +441,9 @@
             fetchCrimeTrends();
             fetchHotspots();
             fetchDistricts();
+            fetchShapDistricts();
+            runPatrolOptimizer();
+            regenerateVisuals();
         });
 
         // 1. Fetch System Health
@@ -499,6 +590,101 @@
                 console.error('District detail fetch failed:', err);
             }
         }
+
+        // 8. Populate SHAP district dropdown (reuse /districts)
+        async function fetchShapDistricts() {
+            try {
+                const res = await fetch(`${API_BASE}/districts`);
+                const districts = await res.json();
+                const select = document.getElementById('shapDistrictSelect');
+                select.innerHTML = '<option value="">Select district...</option>';
+                districts.forEach(d => {
+                    const opt = document.createElement('option');
+                    opt.value = d.district;
+                    opt.innerText = d.district;
+                    select.appendChild(opt);
+                });
+                select.onchange = (e) => { if (e.target.value) fetchShap(e.target.value); };
+            } catch (err) {
+                console.error('SHAP districts fetch failed:', err);
+            }
+        }
+
+        // 9. Fetch SHAP explanation for a district
+        async function fetchShap(districtName) {
+            try {
+                const res = await fetch(`${API_BASE}/explain/${encodeURIComponent(districtName)}`);
+                if (!res.ok) {
+                    document.getElementById('shapPlainEnglish').innerText = `No explanation available for ${districtName}.`;
+                    return;
+                }
+                const data = await res.json();
+                document.getElementById('shapPlainEnglish').innerText = data.plain_english || 'No explanation.';
+
+                const container = document.getElementById('shapContributions');
+                container.innerHTML = '';
+                const maxAbs = Math.max(...data.contributions.map(c => Math.abs(c.shap_value)), 1);
+                data.contributions.forEach(c => {
+                    const pct = Math.round((Math.abs(c.shap_value) / maxAbs) * 100);
+                    const sign = c.shap_value >= 0 ? 'text-red-400' : 'text-emerald-400';
+                    const bar = c.shap_value >= 0 ? 'bg-red-500/70' : 'bg-emerald-500/70';
+                    const row = document.createElement('div');
+                    row.innerHTML = `
+                        <div class="flex justify-between text-xs mb-1">
+                            <span class="text-slate-300">${c.label}</span>
+                            <span class="${sign} font-mono">${c.shap_value >= 0 ? '+' : ''}${c.shap_value.toFixed(1)}</span>
+                        </div>
+                        <div class="w-full h-2 rounded bg-brand-bg/60 overflow-hidden">
+                            <div class="h-full ${bar}" style="width:${pct}%"></div>
+                        </div>`;
+                    container.appendChild(row);
+                });
+            } catch (err) {
+                console.error('SHAP fetch failed:', err);
+            }
+        }
+
+        // 10. Patrol Deployment Optimizer
+        async function runPatrolOptimizer() {
+            const units = parseInt(document.getElementById('patrolUnits').value) || 20;
+            try {
+                const res = await fetch(`${API_BASE}/patrol/optimize?total_units=${units}`, { method: 'POST' });
+                const data = await res.json();
+                document.getElementById('patrolReduction').innerText = `${data.risk_reduction_pct}%`;
+                document.getElementById('patrolResidual').innerText = data.residual_risk;
+                document.getElementById('patrolDistricts').innerText = data.districts_considered;
+
+                const container = document.getElementById('patrolAssignments');
+                container.innerHTML = '';
+                data.assignments.forEach(a => {
+                    const item = document.createElement('div');
+                    item.className = 'glass-card p-2.5 rounded-lg flex items-center justify-between border border-white/5';
+                    item.innerHTML = `
+                        <div>
+                            <h4 class="font-semibold text-white text-sm">${a.district}</h4>
+                            <p class="text-[11px] text-slate-400">Risk ${a.risk_score} · Reduced ${a.risk_reduced}</p>
+                        </div>
+                        <span class="text-xs font-bold font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">${a.units_assigned} unit(s)</span>`;
+                    container.appendChild(item);
+                });
+            } catch (err) {
+                alert('Patrol optimization failed. Ensure backend API is running.');
+            }
+        }
+        document.getElementById('patrolRunBtn').addEventListener('click', runPatrolOptimizer);
+
+        // 11. Regenerate visual artifacts (map + network)
+        async function regenerateVisuals() {
+            try {
+                await fetch(`${API_BASE}/map/hotspots`, { method: 'GET' });
+                await fetch(`${API_BASE}/network/graph`, { method: 'GET' });
+                document.getElementById('hotspotMapFrame').src = `/data/output/hotspot_map.html?t=${Date.now()}`;
+                document.getElementById('networkFrame').src = `/data/output/offender_network.html?t=${Date.now()}`;
+            } catch (err) {
+                console.error('Visual regen failed:', err);
+            }
+        }
+        document.getElementById('vizRegenBtn').addEventListener('click', regenerateVisuals);
 
         // 7. Live Predictive Simulator Form Submission
         document.getElementById('predictForm').addEventListener('submit', async (e) => {
