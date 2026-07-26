@@ -145,12 +145,29 @@ except Exception as e:
     dump("patrol_grid.json", {"error": str(e)})
 
 # --- copy generated viz HTML next to the page ---
+# NOTE: we keep the self-contained local maps in app/static-viz/ (they vendor
+# JS/CSS locally and need no external CDN/tiles). Only copy the generated ones
+# if a local version is not already present, so our offline maps win.
+import shutil
 for src in ["data/output/hotspot_map.html", "data/output/offender_network.html"]:
     p = ROOT / src
+    dest = VIZ / p.name
+    if dest.exists():
+        print("kept local self-contained", p.name)
+        continue
     if p.exists():
-        import shutil
-        shutil.copy(p, VIZ / p.name)
+        shutil.copy(p, dest)
         print("copied", p.name)
+
+# --- ensure vendored libs are present in static-viz/lib ---
+LIB_SRC = ROOT / "app" / "static-viz" / "lib"
+LIB_DEST = VIZ / "lib"
+LIB_DEST.mkdir(parents=True, exist_ok=True)
+if LIB_SRC.exists():
+    for lib in LIB_SRC.iterdir():
+        if lib.is_file():
+            shutil.copy(lib, LIB_DEST / lib.name)
+    print("vendored libs:", len(list(LIB_DEST.glob('*'))))
 
 print("\nSTATIC BUILD COMPLETE")
 print("static-data files:", len(list(STATIC.glob('*.json'))))
