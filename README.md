@@ -74,7 +74,7 @@ graph TD
     F -->|Local Attributions| G[SHAP Risk Explainer]
     D & F --> H[PuLP Patrol Optimizer]
 
-    G --> I[Streamlit Command Dashboard]
+    G[Command Dashboard (app/index.html)]
     H --> I
     J[Suspect Links CSV] -->|NetworkX / Pyvis| K[Interactive Offender Graph]
     K --> I
@@ -88,7 +88,7 @@ graph TD
 ┌─────────────────────────────────────────────────────────────────────────────────────────────┐
 │ CORE STACK                                                                                  │
 │                                                                                             │
-│   Frontend & Dashboard   : Streamlit · Folium · Plotly Express · Pyvis                     │
+│   Frontend & Dashboard   : Custom HTML/JS (Leaflet, vis-network) · Folium (static) · Pyvis · Plotly   │
 │   Machine Learning       : Scikit-learn · DBSCAN · Isolation Forest                        │
 │   Explainable AI         : SHAP (SHapley Additive exPlanations)                            │
 │   Optimization Engine    : PuLP (CBC Solver) / SciPy                                       │
@@ -104,6 +104,7 @@ graph TD
 ### Prerequisites
 - Python 3.10+
 - Git
+- A `.env` file with Supabase credentials (gitignored — NOT in the repo; copy it from the team or recreate it). Required for the live DB-backed API.
 
 ```bash
 # 1. Clone the repository
@@ -127,14 +128,13 @@ python -m data.socio_economic_data
 python -m backend.ml.hotspots
 python -m backend.ml.anomalies
 
-# 6. Launch the backend API (serves data, optimizer, maps, SHAP)
+# 6. Launch the backend API — it serves the dashboard at / AND all data/optimizer/map/SHAP endpoints
 python -m uvicorn backend.api.main:app --host 127.0.0.1 --port 8000
+#    The dashboard is app/index.html (a custom HTML/JS console, NOT Streamlit).
+#    It is served automatically at http://127.0.0.1:8000/ — no separate command needed.
 
-# 7. In a second terminal, launch the Streamlit Command Console
-streamlit run app/app.py
-```
 
-> The dashboard opens at http://localhost:8501. The backend API runs at http://127.0.0.1:8000.
+> The dashboard AND API both run from the single backend command above: http://127.0.0.1:8000/
 
 ---
 
@@ -169,7 +169,9 @@ Drishti/
 │   │   └── config.py                         # Data/path configuration
 │   └── common/                               # Logger, helpers, constants
 ├── app/
-│   └── app.py                                # Main Streamlit Command Console UI
+│   ├── index.html                            # Custom dark Command Console (NO Streamlit)
+│   ├── static-data/                          # Pre-built JSON (hotspots, SHAP, patrol grid, ...)
+│   └── static-viz/                           # Inlined map libs (Leaflet, vis-network) + generated maps
 ├── tests/
 │   ├── test_features.py                      # Feature tests
 │   └── test_manual_checklists.py             # Manual "done" checklist tests

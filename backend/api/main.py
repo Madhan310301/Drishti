@@ -100,7 +100,8 @@ app.include_router(router)
 
 # Mount static files if app directory exists
 if APP_DIR.exists():
-    app.mount("/static", StaticFiles(directory=APP_DIR), name="static")
+    app.mount("/static-data", StaticFiles(directory=APP_DIR / "static-data"), name="static_data")
+    app.mount("/static-viz", StaticFiles(directory=APP_DIR / "static-viz"), name="static_viz")
 
 # Mount generated ML artifacts (maps, graphs) so the dashboard can embed them
 OUTPUT_DATA_DIR = PROJECT_ROOT / "data" / "output"

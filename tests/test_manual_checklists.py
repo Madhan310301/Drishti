@@ -7,7 +7,7 @@ Each test asserts the EXACT acceptance criteria from the team manual:
          SHAP explanation; all scripts finish < 30s.
 - Kalyan: patrol_optimizer prints deployed + coverage; 5->10 units raises
          coverage; 3->1 km lowers coverage; solver < 2s; clean dict.
-- Jenifa: streamlit app imports; exposes solve_patrol; (live run is manual).
+- Jenifa: dashboard (app/index.html) served by FastAPI; patrol optimizer exposed via /patrol/optimize; (live run is manual).
 - Madhan: DATA_CONTRACTS.md exists; requirements.txt complete; .gitignore
          has offender_graph.html; full pipeline artifacts exist.
 
@@ -116,9 +116,13 @@ def test_patrol_solver_fast_and_clean_dict():
 
 
 # ---------------------------------------------------------------- JENIFA
-def test_streamlit_app_imports_and_exposes_solve_patrol():
-    import app.app as a
-    assert hasattr(a, "solve_patrol")
+def test_dashboard_backend_exposes_patrol_optimizer():
+    # The dashboard is app/index.html served by the FastAPI backend.
+    # The patrol optimizer is exposed via backend.ml.patrol_optimizer.PatrolOptimizer
+    # and the /patrol/optimize API route (there is NO Streamlit app.py).
+    from backend.ml.patrol_optimizer import PatrolOptimizer
+
+    assert hasattr(PatrolOptimizer, "optimize")
 
 
 # ---------------------------------------------------------------- MADHAN

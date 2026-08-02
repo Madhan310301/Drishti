@@ -33,3 +33,4 @@ faker>=19.0.0
 # Testing & utilities
 pytest>=7.3.0
 python-dotenv>=1.0.0
+httpx2>=2.9.1
