@@ -242,7 +242,7 @@ async function loadViz(tab, file, mountId) {
   if (vizLoaded[tab]) return;
   const mount = document.getElementById(mountId);
   try {
-    const html = await (await fetch('static-viz/' + file)).text();
+    const html = await (await fetch('static-viz/' + file + '?v=' + new Date().getTime())).text();
     // Use an inline srcdoc iframe: the document is inline (no HTTP fetch), so
     // the host's X-Frame-Options: DENY does NOT apply, AND scripts/styles in
     // the map HTML execute normally (unlike innerHTML injection).

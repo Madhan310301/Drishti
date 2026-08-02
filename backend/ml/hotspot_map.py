@@ -90,8 +90,12 @@ class HotspotMapBuilder:
             raise ProcessingError("Hotspot predictions are empty.")
 
         plotted, missing = [], []
-        fmap = folium.Map(location=[15.0, 76.0], zoom_start=7, tiles="OpenStreetMap")
-
+        fmap = folium.Map(
+            location=[15.0, 76.0],
+            zoom_start=7,
+            tiles="https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}",
+            attr="Google Maps"
+        )
         deploy_map = {}
         if deployments:
             for d in deployments:

@@ -103,9 +103,9 @@ class NetworkGraphBuilder:
                    "#4cc9f0", "#80ed99", "#ffd166", "#ff7b00", "#ff4d6d"]
         gang_color = {g: palette[i % len(palette)] for i, g in enumerate(gangs)}
 
-        net = Network(height="720px", width="100%", notebook=False, directed=False,
+        net = Network(height="100vh", width="100%", notebook=False, directed=False,
                       bgcolor="#0b1020", font_color="#e2e8f0")
-        net.barnes_hut(gravity=-8000, central_gravity=0.3, spring_length=120, spring_strength=0.04)
+        net.repulsion(node_distance=200, central_gravity=0.1, spring_length=200, spring_strength=0.05, damping=0.09)
 
         for _, n in nodes.iterrows():
             gid = n.get("suspect_id")
@@ -138,6 +138,13 @@ class NetworkGraphBuilder:
 
         self.out_file.parent.mkdir(parents=True, exist_ok=True)
         net.write_html(str(self.out_file))
+
+        # PyVis emits a broken <script src="lib/bindings/utils.js"> reference
+        # that 404s when served from our static file server. Strip it out.
+        html = self.out_file.read_text(encoding="utf-8")
+        html = html.replace('<script src="lib/bindings/utils.js"></script>', '')
+        self.out_file.write_text(html, encoding="utf-8")
+
         logger.info("Wrote network graph to %s", self.out_file.name)
 
         return {
